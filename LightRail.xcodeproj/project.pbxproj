@@ -15,6 +15,9 @@
 		959421DA1A1D36C200715E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959421D91A1D36C200715E6D /* Images.xcassets */; };
 		959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959421DB1A1D36C200715E6D /* LaunchScreen.xib */; };
 		959421E91A1D36C200715E6D /* LightRailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421E81A1D36C200715E6D /* LightRailTests.m */; };
+		959421F41A1D416A00715E6D /* StationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421F31A1D416A00715E6D /* StationsListViewController.m */; };
+		95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E5D8881A1D5FCA00F017C8 /* Stations.m */; };
+		95EA42A81A1D43C100C8CECB /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EA42A71A1D43C100C8CECB /* stops.txt */; };
 		E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */; };
 		E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */; };
 /* End PBXBuildFile section */
@@ -45,6 +48,11 @@
 		959421E21A1D36C200715E6D /* LightRailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightRailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959421E71A1D36C200715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959421E81A1D36C200715E6D /* LightRailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightRailTests.m; sourceTree = "<group>"; };
+		959421F21A1D416A00715E6D /* StationsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsListViewController.h; sourceTree = "<group>"; };
+		959421F31A1D416A00715E6D /* StationsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationsListViewController.m; sourceTree = "<group>"; };
+		95E5D8871A1D5FCA00F017C8 /* Stations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stations.h; sourceTree = "<group>"; };
+		95E5D8881A1D5FCA00F017C8 /* Stations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stations.m; sourceTree = "<group>"; };
+		95EA42A71A1D43C100C8CECB /* stops.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.txt; sourceTree = "<group>"; };
 		E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 		E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationModel.h; sourceTree = "<group>"; };
@@ -90,6 +98,10 @@
 		959421C81A1D36C100715E6D /* LightRail */ = {
 			isa = PBXGroup;
 			children = (
+				959421F21A1D416A00715E6D /* StationsListViewController.h */,
+				959421F31A1D416A00715E6D /* StationsListViewController.m */,
+				95E5D8871A1D5FCA00F017C8 /* Stations.h */,
+				95E5D8881A1D5FCA00F017C8 /* Stations.m */,
 				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
 				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
@@ -111,6 +123,7 @@
 		959421C91A1D36C100715E6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				95EA42A71A1D43C100C8CECB /* stops.txt */,
 				959421CA1A1D36C100715E6D /* Info.plist */,
 				959421CB1A1D36C100715E6D /* main.m */,
 			);
@@ -214,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EA42A81A1D43C100C8CECB /* stops.txt in Resources */,
 				959421D81A1D36C200715E6D /* Main.storyboard in Resources */,
 				959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */,
 				959421DA1A1D36C200715E6D /* Images.xcassets in Resources */,
@@ -236,8 +250,10 @@
 			files = (
 				E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */,
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
+				95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				959421D21A1D36C100715E6D /* FirstViewController.m in Sources */,
+				959421F41A1D416A00715E6D /* StationsListViewController.m in Sources */,
 				E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */,
 				959421CC1A1D36C100715E6D /* main.m in Sources */,
 			);

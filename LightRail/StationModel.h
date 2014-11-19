@@ -15,4 +15,6 @@
 @property NSString *latitude;
 @property NSString *longitude;
 
+-(id) initWithCSVDictionary:(NSDictionary *)dict;
+
 @end
