@@ -16,6 +16,7 @@
 		959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959421DB1A1D36C200715E6D /* LaunchScreen.xib */; };
 		959421E91A1D36C200715E6D /* LightRailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421E81A1D36C200715E6D /* LightRailTests.m */; };
 		E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */; };
+		E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		959421E81A1D36C200715E6D /* LightRailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightRailTests.m; sourceTree = "<group>"; };
 		E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationModel.h; sourceTree = "<group>"; };
+		E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
+				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
+				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
 				959421D01A1D36C100715E6D /* FirstViewController.h */,
 				959421D11A1D36C100715E6D /* FirstViewController.m */,
 				959421D31A1D36C100715E6D /* SecondViewController.h */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */,
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				959421D21A1D36C100715E6D /* FirstViewController.m in Sources */,
