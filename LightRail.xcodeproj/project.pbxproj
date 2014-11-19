@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		959421CC1A1D36C100715E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CB1A1D36C100715E6D /* main.m */; };
+		959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CE1A1D36C100715E6D /* AppDelegate.m */; };
+		959421D21A1D36C100715E6D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D11A1D36C100715E6D /* FirstViewController.m */; };
+		959421D51A1D36C100715E6D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D41A1D36C100715E6D /* SecondViewController.m */; };
+		959421D81A1D36C200715E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959421D61A1D36C200715E6D /* Main.storyboard */; };
+		959421DA1A1D36C200715E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959421D91A1D36C200715E6D /* Images.xcassets */; };
+		959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959421DB1A1D36C200715E6D /* LaunchScreen.xib */; };
+		959421E91A1D36C200715E6D /* LightRailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421E81A1D36C200715E6D /* LightRailTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		959421E31A1D36C200715E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 959421BE1A1D36C100715E6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 959421C51A1D36C100715E6D;
+			remoteInfo = LightRail;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		959421C61A1D36C100715E6D /* LightRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		959421CA1A1D36C100715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959421CB1A1D36C100715E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		959421CD1A1D36C100715E6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		959421CE1A1D36C100715E6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		959421D01A1D36C100715E6D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		959421D11A1D36C100715E6D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		959421D31A1D36C100715E6D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		959421D41A1D36C100715E6D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		959421D71A1D36C200715E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		959421D91A1D36C200715E6D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		959421DC1A1D36C200715E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		959421E21A1D36C200715E6D /* LightRailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightRailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		959421E71A1D36C200715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959421E81A1D36C200715E6D /* LightRailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightRailTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		959421C31A1D36C100715E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959421DF1A1D36C200715E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		959421BD1A1D36C100715E6D = {
+			isa = PBXGroup;
+			children = (
+				959421C81A1D36C100715E6D /* LightRail */,
+				959421E51A1D36C200715E6D /* LightRailTests */,
+				959421C71A1D36C100715E6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		959421C71A1D36C100715E6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				959421C61A1D36C100715E6D /* LightRail.app */,
+				959421E21A1D36C200715E6D /* LightRailTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		959421C81A1D36C100715E6D /* LightRail */ = {
+			isa = PBXGroup;
+			children = (
+				959421CD1A1D36C100715E6D /* AppDelegate.h */,
+				959421CE1A1D36C100715E6D /* AppDelegate.m */,
+				959421D01A1D36C100715E6D /* FirstViewController.h */,
+				959421D11A1D36C100715E6D /* FirstViewController.m */,
+				959421D31A1D36C100715E6D /* SecondViewController.h */,
+				959421D41A1D36C100715E6D /* SecondViewController.m */,
+				959421D61A1D36C200715E6D /* Main.storyboard */,
+				959421D91A1D36C200715E6D /* Images.xcassets */,
+				959421DB1A1D36C200715E6D /* LaunchScreen.xib */,
+				959421C91A1D36C100715E6D /* Supporting Files */,
+			);
+			path = LightRail;
+			sourceTree = "<group>";
+		};
+		959421C91A1D36C100715E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				959421CA1A1D36C100715E6D /* Info.plist */,
+				959421CB1A1D36C100715E6D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		959421E51A1D36C200715E6D /* LightRailTests */ = {
+			isa = PBXGroup;
+			children = (
+				959421E81A1D36C200715E6D /* LightRailTests.m */,
+				959421E61A1D36C200715E6D /* Supporting Files */,
+			);
+			path = LightRailTests;
+			sourceTree = "<group>";
+		};
+		959421E61A1D36C200715E6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				959421E71A1D36C200715E6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		959421C51A1D36C100715E6D /* LightRail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959421EC1A1D36C200715E6D /* Build configuration list for PBXNativeTarget "LightRail" */;
+			buildPhases = (
+				959421C21A1D36C100715E6D /* Sources */,
+				959421C31A1D36C100715E6D /* Frameworks */,
+				959421C41A1D36C100715E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightRail;
+			productName = LightRail;
+			productReference = 959421C61A1D36C100715E6D /* LightRail.app */;
+			productType = "com.apple.product-type.application";
+		};
+		959421E11A1D36C200715E6D /* LightRailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 959421EF1A1D36C200715E6D /* Build configuration list for PBXNativeTarget "LightRailTests" */;
+			buildPhases = (
+				959421DE1A1D36C200715E6D /* Sources */,
+				959421DF1A1D36C200715E6D /* Frameworks */,
+				959421E01A1D36C200715E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				959421E41A1D36C200715E6D /* PBXTargetDependency */,
+			);
+			name = LightRailTests;
+			productName = LightRailTests;
+			productReference = 959421E21A1D36C200715E6D /* LightRailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		959421BE1A1D36C100715E6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "ASU CSE 494";
+				TargetAttributes = {
+					959421C51A1D36C100715E6D = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					959421E11A1D36C200715E6D = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 959421C51A1D36C100715E6D;
+					};
+				};
+			};
+			buildConfigurationList = 959421C11A1D36C100715E6D /* Build configuration list for PBXProject "LightRail" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 959421BD1A1D36C100715E6D;
+			productRefGroup = 959421C71A1D36C100715E6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				959421C51A1D36C100715E6D /* LightRail */,
+				959421E11A1D36C200715E6D /* LightRailTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		959421C41A1D36C100715E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959421D81A1D36C200715E6D /* Main.storyboard in Resources */,
+				959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */,
+				959421DA1A1D36C200715E6D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959421E01A1D36C200715E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		959421C21A1D36C100715E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
+				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
+				959421D21A1D36C100715E6D /* FirstViewController.m in Sources */,
+				959421CC1A1D36C100715E6D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		959421DE1A1D36C200715E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				959421E91A1D36C200715E6D /* LightRailTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		959421E41A1D36C200715E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 959421C51A1D36C100715E6D /* LightRail */;
+			targetProxy = 959421E31A1D36C200715E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		959421D61A1D36C200715E6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				959421D71A1D36C200715E6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		959421DB1A1D36C200715E6D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				959421DC1A1D36C200715E6D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		959421EA1A1D36C200715E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		959421EB1A1D36C200715E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		959421ED1A1D36C200715E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LightRail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		959421EE1A1D36C200715E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LightRail/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		959421F01A1D36C200715E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightRailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightRail.app/LightRail";
+			};
+			name = Debug;
+		};
+		959421F11A1D36C200715E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LightRailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightRail.app/LightRail";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		959421C11A1D36C100715E6D /* Build configuration list for PBXProject "LightRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959421EA1A1D36C200715E6D /* Debug */,
+				959421EB1A1D36C200715E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		959421EC1A1D36C200715E6D /* Build configuration list for PBXNativeTarget "LightRail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959421ED1A1D36C200715E6D /* Debug */,
+				959421EE1A1D36C200715E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		959421EF1A1D36C200715E6D /* Build configuration list for PBXNativeTarget "LightRailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				959421F01A1D36C200715E6D /* Debug */,
+				959421F11A1D36C200715E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 959421BE1A1D36C100715E6D /* Project object */;
+}
