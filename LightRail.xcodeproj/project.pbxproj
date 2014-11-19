@@ -15,6 +15,7 @@
 		959421DA1A1D36C200715E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959421D91A1D36C200715E6D /* Images.xcassets */; };
 		959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 959421DB1A1D36C200715E6D /* LaunchScreen.xib */; };
 		959421E91A1D36C200715E6D /* LightRailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421E81A1D36C200715E6D /* LightRailTests.m */; };
+		E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		959421E21A1D36C200715E6D /* LightRailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightRailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959421E71A1D36C200715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959421E81A1D36C200715E6D /* LightRailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightRailTests.m; sourceTree = "<group>"; };
+		E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		959421C81A1D36C100715E6D /* LightRail */ = {
 			isa = PBXGroup;
 			children = (
+				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
+				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
 				959421D01A1D36C100715E6D /* FirstViewController.h */,
@@ -227,6 +232,7 @@
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				959421D21A1D36C100715E6D /* FirstViewController.m in Sources */,
+				E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */,
 				959421CC1A1D36C100715E6D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +424,7 @@
 				959421EE1A1D36C200715E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		959421EF1A1D36C200715E6D /* Build configuration list for PBXNativeTarget "LightRailTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				959421F11A1D36C200715E6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
