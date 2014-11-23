@@ -23,7 +23,7 @@
 //}
 
 
-- (id) initWithStationID:(int)stationID
+- (id) initWithStationID:(long)stationID
 {
     self = [super init];
     
