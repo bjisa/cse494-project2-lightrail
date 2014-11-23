@@ -11,6 +11,6 @@
 @interface Stations : NSObject
 @property (nonatomic, strong) NSMutableArray *stationlist;
 
-+(Stations*)sharedStations;
++ (Stations*) sharedStations;
 
 @end
