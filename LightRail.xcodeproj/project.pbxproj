@@ -106,18 +106,11 @@
 		959421C81A1D36C100715E6D /* LightRail */ = {
 			isa = PBXGroup;
 			children = (
-				E588CABE1A2279FE00186E93 /* StationListViewController */,
-				E588CABD1A2279EB00186E93 /* StationInformation */,
-				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
-				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
+				E588CACB1A228E1900186E93 /* View Controllers */,
+				E588CABD1A2279EB00186E93 /* Station Information Models */,
+				E588CACA1A228DF100186E93 /* CHCSV Parser */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
-				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
-				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
-				959421D01A1D36C100715E6D /* FirstViewController.h */,
-				959421D11A1D36C100715E6D /* FirstViewController.m */,
-				959421D31A1D36C100715E6D /* SecondViewController.h */,
-				959421D41A1D36C100715E6D /* SecondViewController.m */,
 				959421D61A1D36C200715E6D /* Main.storyboard */,
 				959421D91A1D36C200715E6D /* Images.xcassets */,
 				959421DB1A1D36C200715E6D /* LaunchScreen.xib */,
@@ -154,23 +147,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E588CABD1A2279EB00186E93 /* StationInformation */ = {
+		E588CABD1A2279EB00186E93 /* Station Information Models */ = {
 			isa = PBXGroup;
 			children = (
+				E588CACC1A228E3300186E93 /* StationModel */,
 				E588CAC91A228C2D00186E93 /* Stations */,
 				E588CAC81A228C2400186E93 /* StationTimes */,
 				E588CAC71A2284F400186E93 /* StationStopDetailsModel */,
 			);
-			name = StationInformation;
+			name = "Station Information Models";
 			sourceTree = "<group>";
 		};
-		E588CABE1A2279FE00186E93 /* StationListViewController */ = {
+		E588CABE1A2279FE00186E93 /* StationList */ = {
 			isa = PBXGroup;
 			children = (
 				959421F21A1D416A00715E6D /* StationsListViewController.h */,
 				959421F31A1D416A00715E6D /* StationsListViewController.m */,
 			);
-			name = StationListViewController;
+			name = StationList;
 			sourceTree = "<group>";
 		};
 		E588CAC71A2284F400186E93 /* StationStopDetailsModel */ = {
@@ -198,6 +192,36 @@
 				95E5D8881A1D5FCA00F017C8 /* Stations.m */,
 			);
 			name = Stations;
+			sourceTree = "<group>";
+		};
+		E588CACA1A228DF100186E93 /* CHCSV Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
+				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
+			);
+			name = "CHCSV Parser";
+			sourceTree = "<group>";
+		};
+		E588CACB1A228E1900186E93 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E588CABE1A2279FE00186E93 /* StationList */,
+				959421D01A1D36C100715E6D /* FirstViewController.h */,
+				959421D11A1D36C100715E6D /* FirstViewController.m */,
+				959421D31A1D36C100715E6D /* SecondViewController.h */,
+				959421D41A1D36C100715E6D /* SecondViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E588CACC1A228E3300186E93 /* StationModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
+				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
+			);
+			name = StationModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
