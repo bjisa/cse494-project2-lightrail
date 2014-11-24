@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="A3v-Ql-aFO" detailTextLabel="9Ay-px-Hw8" style="IBUITableViewCellStyleSubtitle" id="o3t-Li-1fm">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="A3v-Ql-aFO" detailTextLabel="9Ay-px-Hw8" style="IBUITableViewCellStyleSubtitle" id="o3t-Li-1fm">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3t-Li-1fm" id="PJm-kw-YnW">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -96,6 +96,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="f4Y-Rg-H6O" kind="push" id="DXl-aT-S9A"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -108,6 +111,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Nx-cA-oMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682" y="826"/>
+        </scene>
+        <!--Station Details-->
+        <scene sceneID="kZ9-D5-XgE">
+            <objects>
+                <viewController id="f4Y-Rg-H6O" customClass="StationDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="deO-UZ-1pc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="W5e-Qf-2dq">
+                                <rect key="frame" x="16" y="83" width="288" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Eastbound"/>
+                                    <segment title="Westbound"/>
+                                </segments>
+                                <connections>
+                                    <action selector="directionChanged:" destination="f4Y-Rg-H6O" eventType="valueChanged" id="Rzf-u2-xBb"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming arrival times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zI5-JG-liv">
+                                <rect key="frame" x="16" y="143" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B2e-1Y-bck" userLabel="Time1">
+                                <rect key="frame" x="16" y="186" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="w6h-FS-du9" userLabel="Time2">
+                                <rect key="frame" x="16" y="225" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nqs-Ug-ZhT" userLabel="Time3">
+                                <rect key="frame" x="16" y="263" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7A7-Jl-RLt" userLabel="Time4">
+                                <rect key="frame" x="16" y="302" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Station Details" id="YVg-V7-RW3"/>
+                    <connections>
+                        <outlet property="directionSelector" destination="W5e-Qf-2dq" id="WuO-qR-y5T"/>
+                        <outlet property="time1Label" destination="B2e-1Y-bck" id="aMQ-Ja-FXG"/>
+                        <outlet property="time2Label" destination="w6h-FS-du9" id="XJR-CQ-MUz"/>
+                        <outlet property="time3Label" destination="nqs-Ug-ZhT" id="EzY-rB-o6n"/>
+                        <outlet property="time4Label" destination="7A7-Jl-RLt" id="P0A-4r-zmF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0Q-9K-NYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="826"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
