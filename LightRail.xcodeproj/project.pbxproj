@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		959421CC1A1D36C100715E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CB1A1D36C100715E6D /* main.m */; };
 		959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CE1A1D36C100715E6D /* AppDelegate.m */; };
-		959421D21A1D36C100715E6D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D11A1D36C100715E6D /* FirstViewController.m */; };
+		959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D11A1D36C100715E6D /* FavoritesViewController.m */; };
 		959421D51A1D36C100715E6D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D41A1D36C100715E6D /* SecondViewController.m */; };
 		959421D81A1D36C200715E6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959421D61A1D36C200715E6D /* Main.storyboard */; };
 		959421DA1A1D36C200715E6D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959421D91A1D36C200715E6D /* Images.xcassets */; };
@@ -41,8 +41,8 @@
 		959421CB1A1D36C100715E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		959421CD1A1D36C100715E6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		959421CE1A1D36C100715E6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		959421D01A1D36C100715E6D /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		959421D11A1D36C100715E6D /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		959421D01A1D36C100715E6D /* FavoritesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		959421D11A1D36C100715E6D /* FavoritesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 		959421D31A1D36C100715E6D /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		959421D41A1D36C100715E6D /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		959421D71A1D36C200715E6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -114,8 +114,8 @@
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
 				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
 				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
-				959421D01A1D36C100715E6D /* FirstViewController.h */,
-				959421D11A1D36C100715E6D /* FirstViewController.m */,
+				959421D01A1D36C100715E6D /* FavoritesViewController.h */,
+				959421D11A1D36C100715E6D /* FavoritesViewController.m */,
 				959421D31A1D36C100715E6D /* SecondViewController.h */,
 				959421D41A1D36C100715E6D /* SecondViewController.m */,
 				959421D61A1D36C200715E6D /* Main.storyboard */,
@@ -308,7 +308,7 @@
 				E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */,
 				95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
-				959421D21A1D36C100715E6D /* FirstViewController.m in Sources */,
+				959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */,
 				959421F41A1D416A00715E6D /* StationsListViewController.m in Sources */,
 				E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */,
 				959421CC1A1D36C100715E6D /* main.m in Sources */,

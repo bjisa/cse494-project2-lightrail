@@ -1,18 +1,18 @@
 //
-//  FirstViewController.m
+//  FavoritesViewController.m
 //  LightRail
 //
 //  Created by Ben Jisa on 11/19/14.
 //  Copyright (c) 2014 ASU CSE 494. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "FavoritesViewController.h"
 
-@interface FirstViewController ()
+@interface FavoritesViewController ()
 
 @end
 
-@implementation FirstViewController
+@implementation FavoritesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

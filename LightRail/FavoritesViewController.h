@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  FavoritesViewController.h
 //  LightRail
 //
 //  Created by Ben Jisa on 11/19/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FavoritesViewController : UIViewController
 
 
 @end
