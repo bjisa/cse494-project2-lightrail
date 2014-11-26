@@ -8,6 +8,7 @@
 
 #import "StationDetailsViewController.h"
 #import "Constants.h"
+#import "StationTimes.h"
 
 @interface StationDetailsViewController ()
 
@@ -23,8 +24,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // DEBUG: Log the station ID
+    NSLog(@"Station ID = %@", self.selectedStation.stopID);
+    
     // Get the next couple of times
     [self getNextCoupleTimes];
+    
 }
 
 
@@ -36,14 +41,14 @@
 
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
 // User modifies the direction selector
@@ -85,18 +90,26 @@
 // Determine the next couple times that a train will be arriving
 - (void) getNextCoupleTimes
 {
-    //NSString * timestamp = [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSince1970] * 1000];
-    //NSLog(@"Current Timestamp: %@", timestamp);
+    // Get array of arrival times
+    StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:self.selectedStation.stopID.intValue];
+    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:stationTimes.getTrainArrivalTimesArray];
+    NSLog(@"Getting arrival times...");
+    for (NSString *str in arrivalTimes)
+    {
+        NSLog(@"%@", str);
+    }
+    NSLog(@"arrivalTimes.count = %lu", (unsigned long)arrivalTimes.count);
     
     // Get current date and time
     NSDate *today = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm:ss"];    // Get the current time in 24-hour format
+    
     // Display current time in 12HR/24HR (i.e. 11:25PM or 23:25) is formatted according to User Settings
-    [dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+    //[dateFormatter setTimeStyle:NSDateFormatterLongStyle];
+    
     NSString *currentTime = [dateFormatter stringFromDate:today];
     NSLog(@"Current Time: %@", currentTime);
-    
-    // Compare times
     
 }
 

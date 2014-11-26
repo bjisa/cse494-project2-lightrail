@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Constants.h"
+#import "StationModel.h"
 
 @interface StationDetailsViewController : UIViewController
 
@@ -19,5 +20,7 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *directionSelector;
 
 - (IBAction)directionChanged:(id)sender;
+
+@property StationModel *selectedStation;
 
 @end

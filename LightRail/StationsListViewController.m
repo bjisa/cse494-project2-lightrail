@@ -9,8 +9,12 @@
 #import "StationsListViewController.h"
 #import "Stations.h"
 #import "StationModel.h"
+#import "StationDetailsViewController.h"
+#import "StationModel.h"
 
 @interface StationsListViewController ()
+
+@property NSInteger selectedIndexPathRow;
 
 @end
 
@@ -19,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-        
+    
+    self.selectedIndexPathRow = 0;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,15 +32,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    StationDetailsViewController *destination = segue.destinationViewController;
+    
+    Stations *stations = [Stations sharedStations];
+    destination.selectedStation = stations.stationlist[self.selectedIndexPathRow];
 }
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -53,7 +66,11 @@
     cell.textLabel.text = station.name;
     
     return cell;
-    
+}
+
+- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndexPathRow = indexPath.row;
 }
 
 @end
