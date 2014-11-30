@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StationModel.h"
 
-@interface FavoritesViewController : UIViewController
+@interface FavoritesViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 
 @end
