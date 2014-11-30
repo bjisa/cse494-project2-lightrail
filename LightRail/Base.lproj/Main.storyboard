@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Favorites-->
+        <!--Favorite Stations-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FavoritesViewController" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Iel-uH-Dcg" style="IBUITableViewCellStyleDefault" id="Wr3-XA-yzw">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Iel-uH-Dcg" style="IBUITableViewCellStyleDefault" id="Wr3-XA-yzw">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wr3-XA-yzw" id="aFq-4b-g7O">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -30,6 +30,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="95r-FR-odB" kind="push" id="8Be-fi-WPs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -40,14 +43,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" title="Favorite Stations" id="gSe-Hr-Eom"/>
                     <connections>
                         <outlet property="tableView" destination="ALl-lH-w3m" id="nBC-00-3Uo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="-511"/>
+            <point key="canvasLocation" x="947" y="-511"/>
         </scene>
         <!--Map-->
         <scene sceneID="wg7-f3-ORb">
@@ -79,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="107"/>
+            <point key="canvasLocation" x="947" y="107"/>
         </scene>
         <!--Stations-->
         <scene sceneID="f0o-P6-2bL">
@@ -90,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="A3v-Ql-aFO" detailTextLabel="9Ay-px-Hw8" style="IBUITableViewCellStyleSubtitle" id="o3t-Li-1fm">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" textLabel="A3v-Ql-aFO" style="IBUITableViewCellStyleDefault" id="o3t-Li-1fm">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o3t-Li-1fm" id="PJm-kw-YnW">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -101,14 +104,11 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Ay-px-Hw8">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="95r-FR-odB" kind="push" id="9Qe-l4-yAw"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -122,6 +122,21 @@
             </objects>
             <point key="canvasLocation" x="682" y="826"/>
         </scene>
+        <!--Time Tables-->
+        <scene sceneID="Or9-Fz-A8Y">
+            <objects>
+                <viewController id="95r-FR-odB" customClass="StationTimeTableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tc3-MV-ua0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time Tables" id="KS5-cv-7DL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSN-r5-cTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802" y="0.0"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -133,7 +148,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="4f7-in-k4K" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="4dF-eo-D6o" kind="relationship" relationship="viewControllers" id="xoX-dd-mWc"/>
                     </connections>
@@ -161,6 +176,25 @@
             </objects>
             <point key="canvasLocation" x="275" y="826"/>
         </scene>
+        <!--Favorites-->
+        <scene sceneID="7gB-47-I1e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4f7-in-k4K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tzM-DP-Qob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="lik-0M-40c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fY-bz-wjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="415" y="-511"/>
+        </scene>
     </scenes>
     <resources>
         <image name="favorite" width="25" height="25"/>
@@ -172,4 +206,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Be-fi-WPs"/>
+    </inferredMetricsTieBreakers>
 </document>
