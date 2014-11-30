@@ -10,4 +10,26 @@
 
 @implementation StationTimeTableViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.times = [[NSMutableArray alloc] init];
+}
+
+#pragma mark - TableViewDelegation
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.times.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    NSString *time = self.times[indexPath.row];
+    cell.textLabel.text = time;
+    
+    return cell;
+}
+
 @end

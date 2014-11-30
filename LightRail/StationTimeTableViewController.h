@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StationTimeTableViewController : UIViewController
+@interface StationTimeTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *directionSelector;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property NSMutableArray *times;
 
 @end
