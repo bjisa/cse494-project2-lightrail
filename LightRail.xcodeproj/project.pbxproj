@@ -20,6 +20,8 @@
 		95EA42A81A1D43C100C8CECB /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EA42A71A1D43C100C8CECB /* stops.txt */; };
 		E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */; };
 		E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */; };
+		E535C1E61A2BE4C10080DB20 /* TripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E535C1E51A2BE4C10080DB20 /* TripModel.m */; };
+		E5509CF41A2669480091F6DB /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5509CF31A2669480091F6DB /* trips.txt */; };
 		E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = E588CAC01A227D2B00186E93 /* StationTimes.m */; };
 		E588CAC31A22801C00186E93 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = E588CAC21A22801C00186E93 /* stop_times.txt */; };
 		E588CAC61A22818C00186E93 /* StationStopDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E588CAC51A22818C00186E93 /* StationStopDetails.m */; };
@@ -62,6 +64,9 @@
 		E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 		E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationModel.h; sourceTree = "<group>"; };
 		E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationModel.m; sourceTree = "<group>"; };
+		E535C1E41A2BE4C10080DB20 /* TripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripModel.h; sourceTree = "<group>"; };
+		E535C1E51A2BE4C10080DB20 /* TripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripModel.m; sourceTree = "<group>"; };
+		E5509CF31A2669480091F6DB /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
 		E588CABF1A227D2B00186E93 /* StationTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTimes.h; sourceTree = "<group>"; };
 		E588CAC01A227D2B00186E93 /* StationTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTimes.m; sourceTree = "<group>"; };
 		E588CAC21A22801C00186E93 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stop_times.txt; path = transit_data/stop_times.txt; sourceTree = SOURCE_ROOT; };
@@ -114,6 +119,7 @@
 			children = (
 				E588CAD41A22957700186E93 /* Constants */,
 				E588CACB1A228E1900186E93 /* View Controllers */,
+				E535C1E71A2BE4C80080DB20 /* Trip Information Models */,
 				E588CABD1A2279EB00186E93 /* Station Information Models */,
 				E588CACA1A228DF100186E93 /* CHCSV Parser */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
@@ -129,6 +135,7 @@
 		959421C91A1D36C100715E6D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5509CF31A2669480091F6DB /* trips.txt */,
 				E588CAC21A22801C00186E93 /* stop_times.txt */,
 				95EA42A71A1D43C100C8CECB /* stops.txt */,
 				959421CA1A1D36C100715E6D /* Info.plist */,
@@ -152,6 +159,23 @@
 				959421E71A1D36C200715E6D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E535C1E71A2BE4C80080DB20 /* Trip Information Models */ = {
+			isa = PBXGroup;
+			children = (
+				E535C1E81A2BE4F60080DB20 /* TripModel */,
+			);
+			name = "Trip Information Models";
+			sourceTree = "<group>";
+		};
+		E535C1E81A2BE4F60080DB20 /* TripModel */ = {
+			isa = PBXGroup;
+			children = (
+				E535C1E41A2BE4C10080DB20 /* TripModel.h */,
+				E535C1E51A2BE4C10080DB20 /* TripModel.m */,
+			);
+			name = TripModel;
 			sourceTree = "<group>";
 		};
 		E588CABD1A2279EB00186E93 /* Station Information Models */ = {
@@ -335,6 +359,7 @@
 				E588CAC31A22801C00186E93 /* stop_times.txt in Resources */,
 				959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */,
 				959421DA1A1D36C200715E6D /* Images.xcassets in Resources */,
+				E5509CF41A2669480091F6DB /* trips.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +381,7 @@
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
 				E588CAC61A22818C00186E93 /* StationStopDetails.m in Sources */,
 				E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */,
+				E535C1E61A2BE4C10080DB20 /* TripModel.m in Sources */,
 				95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				E588CACF1A22940D00186E93 /* StationDetailsViewController.m in Sources */,

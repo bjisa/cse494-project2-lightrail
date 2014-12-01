@@ -1,0 +1,699 @@
+route_id,service_id,trip_id,trip_headsign,direction_id,block_id,shape_id
+91,1,16927,"Metro light rail To Sycamore/Main",0,"17449",1083
+91,1,16928,"Metro light rail To Sycamore/Main",0,"17451",1083
+91,1,16929,"Metro light rail To Sycamore/Main",0,"17453",1083
+91,1,16930,"Metro light rail To Sycamore/Main",0,"17455",1083
+91,1,16931,"Metro light rail To Sycamore/Main",0,"17398",1084
+91,1,16932,"Metro light rail To Sycamore/Main",0,"17400",1084
+91,1,16933,"Metro light rail To Sycamore/Main",0,"17402",1084
+91,1,16934,"Metro light rail To Sycamore/Main",0,"17404",1084
+91,1,16935,"Metro light rail To Sycamore/Main",0,"17406",1084
+91,1,16936,"Metro light rail To Sycamore/Main",0,"17408",1084
+91,1,16937,"Metro light rail To Sycamore/Main",0,"17410",1084
+91,1,16938,"Metro light rail To Sycamore/Main",0,"17412",1084
+91,1,16939,"Metro light rail To Sycamore/Main",0,"17414",1084
+91,1,16940,"Metro light rail To Sycamore/Main",0,"17416",1084
+91,1,16941,"Metro light rail To Sycamore/Main",0,"17418",1084
+91,1,16942,"Metro light rail To Sycamore/Main",0,"17420",1084
+91,1,16943,"Metro light rail To Sycamore/Main",0,"17422",1084
+91,1,16944,"Metro light rail To Sycamore/Main",0,"17424",1084
+91,1,16945,"Metro light rail To Sycamore/Main",0,"17426",1084
+91,1,16946,"Metro light rail To Sycamore/Main",0,"17428",1084
+91,1,16947,"Metro light rail To Sycamore/Main",0,"17430",1084
+91,1,16948,"Metro light rail To Sycamore/Main",0,"17432",1084
+91,1,16949,"Metro light rail To Sycamore/Main",0,"17434",1084
+91,1,16950,"Metro light rail To Sycamore/Main",0,"17436",1084
+91,1,16951,"Metro light rail To Sycamore/Main",0,"17438",1084
+91,1,16952,"Metro light rail To Sycamore/Main",0,"17440",1084
+91,1,16953,"Metro light rail To Sycamore/Main",0,"17442",1084
+91,1,16954,"Metro light rail To Sycamore/Main",0,"17444",1084
+91,1,16955,"Metro light rail To Sycamore/Main",0,"17446",1084
+91,1,16956,"Metro light rail To Sycamore/Main",0,"17448",1084
+91,1,16957,"Metro light rail To Sycamore/Main",0,"17458",1084
+91,1,16958,"Metro light rail To Sycamore/Main",0,"17460",1084
+91,1,16959,"Metro light rail To Sycamore/Main",0,"17462",1084
+91,1,16960,"Metro light rail To Sycamore/Main",0,"17464",1084
+91,1,16961,"Metro light rail To Sycamore/Main",0,"17466",1084
+91,1,16962,"Metro light rail To Sycamore/Main",0,"17468",1084
+91,1,16963,"Metro light rail To Sycamore/Main",0,"17470",1084
+91,1,16964,"Metro light rail To Sycamore/Main",0,"17472",1084
+91,1,16965,"Metro light rail To Sycamore/Main",0,"17474",1084
+91,1,16966,"Metro light rail To Sycamore/Main",0,"17450",1085
+91,1,16967,"Metro light rail To Sycamore/Main",0,"17452",1085
+91,1,16968,"Metro light rail To Sycamore/Main",0,"17454",1085
+91,1,16969,"Metro light rail To Sycamore/Main",0,"17396",1086
+91,1,16970,"Metro light rail To Sycamore/Main",0,"17399",1086
+91,1,16971,"Metro light rail To Sycamore/Main",0,"17401",1086
+91,1,16972,"Metro light rail To Sycamore/Main",0,"17403",1086
+91,1,16973,"Metro light rail To Sycamore/Main",0,"17405",1086
+91,1,16974,"Metro light rail To Sycamore/Main",0,"17407",1086
+91,1,16975,"Metro light rail To Sycamore/Main",0,"17409",1086
+91,1,16976,"Metro light rail To Sycamore/Main",0,"17411",1086
+91,1,16977,"Metro light rail To Sycamore/Main",0,"17413",1086
+91,1,16978,"Metro light rail To Sycamore/Main",0,"17415",1086
+91,1,16979,"Metro light rail To Sycamore/Main",0,"17417",1086
+91,1,16980,"Metro light rail To Sycamore/Main",0,"17419",1086
+91,1,16981,"Metro light rail To Sycamore/Main",0,"17421",1086
+91,1,16982,"Metro light rail To Sycamore/Main",0,"17423",1086
+91,1,16983,"Metro light rail To Sycamore/Main",0,"17425",1086
+91,1,16984,"Metro light rail To Sycamore/Main",0,"17427",1086
+91,1,16985,"Metro light rail To Sycamore/Main",0,"17429",1086
+91,1,16986,"Metro light rail To Sycamore/Main",0,"17431",1086
+91,1,16987,"Metro light rail To Sycamore/Main",0,"17433",1086
+91,1,16988,"Metro light rail To Sycamore/Main",0,"17435",1086
+91,1,16989,"Metro light rail To Sycamore/Main",0,"17437",1086
+91,1,16990,"Metro light rail To Sycamore/Main",0,"17439",1086
+91,1,16991,"Metro light rail To Sycamore/Main",0,"17441",1086
+91,1,16992,"Metro light rail To Sycamore/Main",0,"17443",1086
+91,1,16993,"Metro light rail To Sycamore/Main",0,"17445",1086
+91,1,16994,"Metro light rail To Sycamore/Main",0,"17447",1086
+91,1,16995,"Metro light rail To Sycamore/Main",0,"17457",1086
+91,1,16996,"Metro light rail To Sycamore/Main",0,"17459",1086
+91,1,16997,"Metro light rail To Sycamore/Main",0,"17461",1086
+91,1,16998,"Metro light rail To Sycamore/Main",0,"17463",1086
+91,1,16999,"Metro light rail To Sycamore/Main",0,"17465",1086
+91,1,17000,"Metro light rail To Sycamore/Main",0,"17467",1086
+91,1,17001,"Metro light rail To Sycamore/Main",0,"17469",1086
+91,1,17002,"Metro light rail To Sycamore/Main",0,"17471",1086
+91,1,17003,"Metro light rail To Sycamore/Main",0,"17473",1086
+91,1,17004,"Metro light rail To Sycamore/Main",0,"17475",1086
+91,1,17005,"Metro light rail To 44th St/Washington",0,"17477",1087
+91,1,17006,"Metro light rail To 44th St/Washington",0,"17479",1087
+91,1,17007,"Metro light rail To 44th St/Washington",0,"17456",1088
+91,1,17008,"Metro light rail To 44th St/Washington",0,"17476",1088
+91,1,17009,"Metro light rail To 44th St/Washington",0,"17478",1088
+91,1,17010,"Metro light rail To Sycamore/Main",0,"17392",1089
+91,1,17011,"Metro light rail To Sycamore/Main",0,"17394",1089
+91,1,17012,"Metro light rail To Sycamore/Main",0,"17397",1089
+91,1,17013,"Metro light rail To Sycamore/Main",0,"17391",1090
+91,1,17014,"Metro light rail To Sycamore/Main",0,"17393",1090
+91,1,17015,"Metro light rail To Sycamore/Main",0,"17395",1090
+91,1,17016,"Metro light rail To 19th Ave/Montebello",1,"17485",1091
+91,1,17017,"Metro light rail To 19th Ave/Montebello",1,"17487",1091
+91,1,17018,"Metro light rail To 19th Ave/Montebello",1,"17489",1091
+91,1,17019,"Metro light rail To 19th Ave/Montebello",1,"17491",1091
+91,1,17020,"Metro light rail To 19th Ave/Montebello",1,"17493",1091
+91,1,17021,"Metro light rail To 19th Ave/Montebello",1,"17495",1091
+91,1,17022,"Metro light rail To 19th Ave/Montebello",1,"17497",1091
+91,1,17023,"Metro light rail To 19th Ave/Montebello",1,"17499",1091
+91,1,17024,"Metro light rail To 19th Ave/Montebello",1,"17501",1091
+91,1,17025,"Metro light rail To 19th Ave/Montebello",1,"17503",1091
+91,1,17026,"Metro light rail To 19th Ave/Montebello",1,"17505",1091
+91,1,17027,"Metro light rail To 19th Ave/Montebello",1,"17507",1091
+91,1,17028,"Metro light rail To 19th Ave/Montebello",1,"17509",1091
+91,1,17029,"Metro light rail To 19th Ave/Montebello",1,"17511",1091
+91,1,17030,"Metro light rail To 19th Ave/Montebello",1,"17513",1091
+91,1,17031,"Metro light rail To 19th Ave/Montebello",1,"17515",1091
+91,1,17032,"Metro light rail To 19th Ave/Montebello",1,"17517",1091
+91,1,17033,"Metro light rail To 19th Ave/Montebello",1,"17519",1091
+91,1,17034,"Metro light rail To 19th Ave/Montebello",1,"17521",1091
+91,1,17035,"Metro light rail To 19th Ave/Montebello",1,"17523",1091
+91,1,17036,"Metro light rail To 19th Ave/Montebello",1,"17525",1091
+91,1,17037,"Metro light rail To 19th Ave/Montebello",1,"17527",1091
+91,1,17038,"Metro light rail To 19th Ave/Montebello",1,"17529",1091
+91,1,17039,"Metro light rail To 19th Ave/Montebello",1,"17531",1091
+91,1,17040,"Metro light rail To 19th Ave/Montebello",1,"17533",1091
+91,1,17041,"Metro light rail To 19th Ave/Montebello",1,"17535",1091
+91,1,17042,"Metro light rail To 19th Ave/Montebello",1,"17537",1091
+91,1,17043,"Metro light rail To 19th Ave/Montebello",1,"17539",1091
+91,1,17044,"Metro light rail To 19th Ave/Montebello",1,"17542",1091
+91,1,17045,"Metro light rail To 19th Ave/Montebello",1,"17544",1091
+91,1,17046,"Metro light rail To 19th Ave/Montebello",1,"17548",1092
+91,1,17047,"Metro light rail To 19th Ave/Montebello",1,"17550",1092
+91,1,17048,"Metro light rail To 19th Ave/Montebello",1,"17552",1092
+91,1,17049,"Metro light rail To 19th Ave/Montebello",1,"17554",1092
+91,1,17050,"Metro light rail To 19th Ave/Montebello",1,"17556",1092
+91,1,17051,"Metro light rail To 19th Ave/Montebello",1,"17558",1092
+91,1,17052,"Metro light rail To 19th Ave/Montebello",1,"17560",1092
+91,1,17053,"Metro light rail To 19th Ave/Montebello",1,"17562",1092
+91,1,17054,"Metro light rail To 19th Ave/Montebello",1,"17564",1092
+91,1,17055,"Metro light rail To 19th Ave/Montebello",1,"17488",1093
+91,1,17056,"Metro light rail To 19th Ave/Montebello",1,"17490",1093
+91,1,17057,"Metro light rail To 19th Ave/Montebello",1,"17492",1093
+91,1,17058,"Metro light rail To 19th Ave/Montebello",1,"17494",1093
+91,1,17059,"Metro light rail To 19th Ave/Montebello",1,"17496",1093
+91,1,17060,"Metro light rail To 19th Ave/Montebello",1,"17498",1093
+91,1,17061,"Metro light rail To 19th Ave/Montebello",1,"17500",1093
+91,1,17062,"Metro light rail To 19th Ave/Montebello",1,"17502",1093
+91,1,17063,"Metro light rail To 19th Ave/Montebello",1,"17504",1093
+91,1,17064,"Metro light rail To 19th Ave/Montebello",1,"17506",1093
+91,1,17065,"Metro light rail To 19th Ave/Montebello",1,"17508",1093
+91,1,17066,"Metro light rail To 19th Ave/Montebello",1,"17510",1093
+91,1,17067,"Metro light rail To 19th Ave/Montebello",1,"17512",1093
+91,1,17068,"Metro light rail To 19th Ave/Montebello",1,"17514",1093
+91,1,17069,"Metro light rail To 19th Ave/Montebello",1,"17516",1093
+91,1,17070,"Metro light rail To 19th Ave/Montebello",1,"17518",1093
+91,1,17071,"Metro light rail To 19th Ave/Montebello",1,"17520",1093
+91,1,17072,"Metro light rail To 19th Ave/Montebello",1,"17522",1093
+91,1,17073,"Metro light rail To 19th Ave/Montebello",1,"17524",1093
+91,1,17074,"Metro light rail To 19th Ave/Montebello",1,"17526",1093
+91,1,17075,"Metro light rail To 19th Ave/Montebello",1,"17528",1093
+91,1,17076,"Metro light rail To 19th Ave/Montebello",1,"17530",1093
+91,1,17077,"Metro light rail To 19th Ave/Montebello",1,"17532",1093
+91,1,17078,"Metro light rail To 19th Ave/Montebello",1,"17534",1093
+91,1,17079,"Metro light rail To 19th Ave/Montebello",1,"17536",1093
+91,1,17080,"Metro light rail To 19th Ave/Montebello",1,"17538",1093
+91,1,17081,"Metro light rail To 19th Ave/Montebello",1,"17540",1093
+91,1,17082,"Metro light rail To 19th Ave/Montebello",1,"17543",1093
+91,1,17083,"Metro light rail To 19th Ave/Montebello",1,"17545",1093
+91,1,17084,"Metro light rail To 19th Ave/Montebello",1,"17547",1094
+91,1,17085,"Metro light rail To 19th Ave/Montebello",1,"17549",1094
+91,1,17086,"Metro light rail To 19th Ave/Montebello",1,"17551",1094
+91,1,17087,"Metro light rail To 19th Ave/Montebello",1,"17553",1094
+91,1,17088,"Metro light rail To 19th Ave/Montebello",1,"17555",1094
+91,1,17089,"Metro light rail To 19th Ave/Montebello",1,"17557",1094
+91,1,17090,"Metro light rail To 19th Ave/Montebello",1,"17559",1094
+91,1,17091,"Metro light rail To 19th Ave/Montebello",1,"17561",1094
+91,1,17092,"Metro light rail To 19th Ave/Montebello",1,"17563",1094
+91,1,17093,"Metro light rail To Mill/3rd St",1,"17546",1095
+91,1,17094,"Metro light rail To Mill/3rd St",1,"17566",1095
+91,1,17095,"Metro light rail To Mill/3rd St",1,"17568",1095
+91,1,17096,"Metro light rail To 19th Ave/Montebello",1,"17481",1096
+91,1,17097,"Metro light rail To 19th Ave/Montebello",1,"17483",1096
+91,1,17098,"Metro light rail To 19th Ave/Montebello",1,"17480",1097
+91,1,17099,"Metro light rail To 19th Ave/Montebello",1,"17482",1097
+91,1,17100,"Metro light rail To 19th Ave/Montebello",1,"17484",1097
+91,1,17101,"Metro light rail To 19th Ave/Montebello",1,"17486",1098
+91,1,17102,"Metro light rail To Mill/3rd St",1,"17541",1099
+91,1,17103,"Metro light rail To Mill/3rd St",1,"17565",1099
+91,1,17104,"Metro light rail To Mill/3rd St",1,"17567",1099
+91,2,17105,"Metro light rail To Sycamore/Main",0,"17624",1100
+91,2,17106,"Metro light rail To Sycamore/Main",0,"17573",1101
+91,2,17107,"Metro light rail To Sycamore/Main",0,"17575",1101
+91,2,17108,"Metro light rail To Sycamore/Main",0,"17577",1101
+91,2,17109,"Metro light rail To Sycamore/Main",0,"17579",1101
+91,2,17110,"Metro light rail To Sycamore/Main",0,"17581",1101
+91,2,17111,"Metro light rail To Sycamore/Main",0,"17583",1101
+91,2,17112,"Metro light rail To Sycamore/Main",0,"17585",1101
+91,2,17113,"Metro light rail To Sycamore/Main",0,"17587",1101
+91,2,17114,"Metro light rail To Sycamore/Main",0,"17589",1101
+91,2,17115,"Metro light rail To Sycamore/Main",0,"17591",1101
+91,2,17116,"Metro light rail To Sycamore/Main",0,"17593",1101
+91,2,17117,"Metro light rail To Sycamore/Main",0,"17595",1101
+91,2,17118,"Metro light rail To Sycamore/Main",0,"17597",1101
+91,2,17119,"Metro light rail To Sycamore/Main",0,"17599",1101
+91,2,17120,"Metro light rail To Sycamore/Main",0,"17601",1101
+91,2,17121,"Metro light rail To Sycamore/Main",0,"17603",1101
+91,2,17122,"Metro light rail To Sycamore/Main",0,"17605",1101
+91,2,17123,"Metro light rail To Sycamore/Main",0,"17607",1101
+91,2,17124,"Metro light rail To Sycamore/Main",0,"17609",1101
+91,2,17125,"Metro light rail To Sycamore/Main",0,"17611",1101
+91,2,17126,"Metro light rail To Sycamore/Main",0,"17613",1101
+91,2,17127,"Metro light rail To Sycamore/Main",0,"17615",1101
+91,2,17128,"Metro light rail To Sycamore/Main",0,"17617",1101
+91,2,17129,"Metro light rail To Sycamore/Main",0,"17619",1101
+91,2,17130,"Metro light rail To Sycamore/Main",0,"17621",1101
+91,2,17131,"Metro light rail To Sycamore/Main",0,"17623",1101
+91,2,17132,"Metro light rail To Sycamore/Main",0,"17625",1101
+91,2,17133,"Metro light rail To Sycamore/Main",0,"17627",1101
+91,2,17134,"Metro light rail To 44th St/Washington",0,"17628",1102
+91,2,17135,"Metro light rail To 44th St/Washington",0,"17630",1102
+91,2,17136,"Metro light rail To 44th St/Washington",0,"17629",1103
+91,2,17137,"Metro light rail To 44th St/Washington",0,"17631",1103
+91,2,17138,"Metro light rail To Sycamore/Main",0,"17570",1104
+91,2,17139,"Metro light rail To Sycamore/Main",0,"17572",1104
+91,2,17140,"Metro light rail To Sycamore/Main",0,"17569",1105
+91,2,17141,"Metro light rail To Sycamore/Main",0,"17571",1105
+91,2,17142,"Metro light rail To Sycamore/Main",0,"17574",1106
+91,2,17143,"Metro light rail To Sycamore/Main",0,"17576",1106
+91,2,17144,"Metro light rail To Sycamore/Main",0,"17578",1106
+91,2,17145,"Metro light rail To Sycamore/Main",0,"17580",1106
+91,2,17146,"Metro light rail To Sycamore/Main",0,"17582",1106
+91,2,17147,"Metro light rail To Sycamore/Main",0,"17584",1106
+91,2,17148,"Metro light rail To Sycamore/Main",0,"17586",1106
+91,2,17149,"Metro light rail To Sycamore/Main",0,"17588",1106
+91,2,17150,"Metro light rail To Sycamore/Main",0,"17590",1106
+91,2,17151,"Metro light rail To Sycamore/Main",0,"17592",1106
+91,2,17152,"Metro light rail To Sycamore/Main",0,"17594",1106
+91,2,17153,"Metro light rail To Sycamore/Main",0,"17596",1106
+91,2,17154,"Metro light rail To Sycamore/Main",0,"17598",1106
+91,2,17155,"Metro light rail To Sycamore/Main",0,"17600",1106
+91,2,17156,"Metro light rail To Sycamore/Main",0,"17602",1106
+91,2,17157,"Metro light rail To Sycamore/Main",0,"17604",1106
+91,2,17158,"Metro light rail To Sycamore/Main",0,"17606",1106
+91,2,17159,"Metro light rail To Sycamore/Main",0,"17608",1106
+91,2,17160,"Metro light rail To Sycamore/Main",0,"17610",1106
+91,2,17161,"Metro light rail To Sycamore/Main",0,"17612",1106
+91,2,17162,"Metro light rail To Sycamore/Main",0,"17614",1106
+91,2,17163,"Metro light rail To Sycamore/Main",0,"17616",1106
+91,2,17164,"Metro light rail To Sycamore/Main",0,"17618",1106
+91,2,17165,"Metro light rail To Sycamore/Main",0,"17620",1106
+91,2,17166,"Metro light rail To Sycamore/Main",0,"17622",1106
+91,2,17167,"Metro light rail To Sycamore/Main",0,"17626",1106
+91,2,17168,"Metro Light Rail To 19th Ave/Montebello",1,"17636",1107
+91,2,17169,"Metro Light Rail To 19th Ave/Montebello",1,"17638",1107
+91,2,17170,"Metro Light Rail To 19th Ave/Montebello",1,"17640",1107
+91,2,17171,"Metro Light Rail To 19th Ave/Montebello",1,"17642",1107
+91,2,17172,"Metro Light Rail To 19th Ave/Montebello",1,"17644",1107
+91,2,17173,"Metro Light Rail To 19th Ave/Montebello",1,"17646",1107
+91,2,17174,"Metro Light Rail To 19th Ave/Montebello",1,"17648",1107
+91,2,17175,"Metro Light Rail To 19th Ave/Montebello",1,"17650",1107
+91,2,17176,"Metro Light Rail To 19th Ave/Montebello",1,"17652",1107
+91,2,17177,"Metro Light Rail To 19th Ave/Montebello",1,"17654",1107
+91,2,17178,"Metro Light Rail To 19th Ave/Montebello",1,"17656",1107
+91,2,17179,"Metro Light Rail To 19th Ave/Montebello",1,"17658",1107
+91,2,17180,"Metro Light Rail To 19th Ave/Montebello",1,"17660",1107
+91,2,17181,"Metro Light Rail To 19th Ave/Montebello",1,"17662",1107
+91,2,17182,"Metro Light Rail To 19th Ave/Montebello",1,"17664",1107
+91,2,17183,"Metro Light Rail To 19th Ave/Montebello",1,"17666",1107
+91,2,17184,"Metro Light Rail To 19th Ave/Montebello",1,"17668",1107
+91,2,17185,"Metro Light Rail To 19th Ave/Montebello",1,"17670",1107
+91,2,17186,"Metro Light Rail To 19th Ave/Montebello",1,"17672",1107
+91,2,17187,"Metro Light Rail To 19th Ave/Montebello",1,"17674",1107
+91,2,17188,"Metro Light Rail To 19th Ave/Montebello",1,"17676",1107
+91,2,17189,"Metro Light Rail To 19th Ave/Montebello",1,"17678",1107
+91,2,17190,"Metro Light Rail To 19th Ave/Montebello",1,"17680",1107
+91,2,17191,"Metro Light Rail To 19th Ave/Montebello",1,"17682",1107
+91,2,17192,"Metro Light Rail To 19th Ave/Montebello",1,"17684",1107
+91,2,17193,"Metro Light Rail To 19th Ave/Montebello",1,"17686",1107
+91,2,17194,"Metro Light Rail To 19th Ave/Montebello",1,"17688",1107
+91,2,17195,"Metro Light Rail To 19th Ave/Montebello",1,"17690",1107
+91,2,17196,"Metro Light Rail To Mill/3rd St",1,"17692",1108
+91,2,17197,"Metro Light Rail To Mill/3rd St",1,"17694",1108
+91,2,17198,"Metro Light Rail To 19th Ave/Montebello",1,"17632",1109
+91,2,17199,"Metro Light Rail To 19th Ave/Montebello",1,"17634",1109
+91,2,17200,"Metro Light Rail To 19th Ave/Montebello",1,"17633",1110
+91,2,17201,"Metro Light Rail To 19th Ave/Montebello",1,"17635",1110
+91,2,17202,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17637",1111
+91,2,17203,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17639",1111
+91,2,17204,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17641",1111
+91,2,17205,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17643",1111
+91,2,17206,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17645",1111
+91,2,17207,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17647",1111
+91,2,17208,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17649",1111
+91,2,17209,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17651",1111
+91,2,17210,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17653",1111
+91,2,17211,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17655",1111
+91,2,17212,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17657",1111
+91,2,17213,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17659",1111
+91,2,17214,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17661",1111
+91,2,17215,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17663",1111
+91,2,17216,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17665",1111
+91,2,17217,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17667",1111
+91,2,17218,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17669",1111
+91,2,17219,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17671",1111
+91,2,17220,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17673",1111
+91,2,17221,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17675",1111
+91,2,17222,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17677",1111
+91,2,17223,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17679",1111
+91,2,17224,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17681",1111
+91,2,17225,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17683",1111
+91,2,17226,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17685",1111
+91,2,17227,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17687",1111
+91,2,17228,"Metro Light Rail To 19TH AVE/MONTEBELLO",1,"17689",1111
+91,2,17229,"Metro Light  Rail To Mill/3rd St",1,"17691",1112
+91,2,17230,"Metro Light  Rail To Mill/3rd St",1,"17693",1112
+91,3,17231,"Metro light rail To Sycamore/Main",0,"17007",1113
+91,3,17232,"Metro light rail To Sycamore/Main",0,"17013",1113
+91,3,17233,"Metro light rail To Sycamore/Main",0,"17015",1113
+91,3,17234,"Metro light rail To Sycamore/Main",0,"17017",1113
+91,3,17235,"Metro light rail To Sycamore/Main",0,"17019",1113
+91,3,17236,"Metro light rail To Sycamore/Main",0,"17021",1113
+91,3,17237,"Metro light rail To Sycamore/Main",0,"17023",1113
+91,3,17238,"Metro light rail To Sycamore/Main",0,"17025",1113
+91,3,17239,"Metro light rail To Sycamore/Main",0,"17027",1113
+91,3,17240,"Metro light rail To Sycamore/Main",0,"17029",1113
+91,3,17241,"Metro light rail To Sycamore/Main",0,"17031",1113
+91,3,17242,"Metro light rail To Sycamore/Main",0,"17033",1113
+91,3,17243,"Metro light rail To Sycamore/Main",0,"17035",1113
+91,3,17244,"Metro light rail To Sycamore/Main",0,"17037",1113
+91,3,17245,"Metro light rail To Sycamore/Main",0,"17039",1113
+91,3,17246,"Metro light rail To Sycamore/Main",0,"17041",1113
+91,3,17247,"Metro light rail To Sycamore/Main",0,"17043",1113
+91,3,17248,"Metro light rail To Sycamore/Main",0,"17045",1113
+91,3,17249,"Metro light rail To Sycamore/Main",0,"17047",1113
+91,3,17250,"Metro light rail To Sycamore/Main",0,"17049",1113
+91,3,17251,"Metro light rail To Sycamore/Main",0,"17051",1113
+91,3,17252,"Metro light rail To Sycamore/Main",0,"17053",1113
+91,3,17253,"Metro light rail To Sycamore/Main",0,"17055",1113
+91,3,17254,"Metro light rail To Sycamore/Main",0,"17057",1113
+91,3,17255,"Metro light rail To Sycamore/Main",0,"17059",1113
+91,3,17256,"Metro light rail To Sycamore/Main",0,"17061",1113
+91,3,17257,"Metro light rail To Sycamore/Main",0,"17063",1113
+91,3,17258,"Metro light rail To Sycamore/Main",0,"17065",1113
+91,3,17259,"Metro light rail To Sycamore/Main",0,"17067",1113
+91,3,17260,"Metro light rail To Sycamore/Main",0,"17069",1113
+91,3,17261,"Metro light rail To Sycamore/Main",0,"17071",1113
+91,3,17262,"Metro light rail To Sycamore/Main",0,"17073",1113
+91,3,17263,"Metro light rail To Sycamore/Main",0,"17281",1113
+91,3,17264,"Metro light rail To Sycamore/Main",0,"17283",1113
+91,3,17265,"Metro light rail To Sycamore/Main",0,"17006",1114
+91,3,17266,"Metro light rail To Sycamore/Main",0,"17012",1114
+91,3,17267,"Metro light rail To Sycamore/Main",0,"17076",1114
+91,3,17268,"Metro light rail To Sycamore/Main",0,"17079",1114
+91,3,17269,"Metro light rail To Sycamore/Main",0,"17081",1114
+91,3,17270,"Metro light rail To Sycamore/Main",0,"17083",1114
+91,3,17271,"Metro light rail To Sycamore/Main",0,"17085",1114
+91,3,17272,"Metro light rail To Sycamore/Main",0,"17087",1114
+91,3,17273,"Metro light rail To Sycamore/Main",0,"17089",1114
+91,3,17274,"Metro light rail To Sycamore/Main",0,"17277",1114
+91,3,17275,"Metro light rail To Sycamore/Main",0,"17279",1114
+91,3,17276,"Metro light rail To Sycamore/Main",0,"17008",1115
+91,3,17277,"Metro light rail To Sycamore/Main",0,"17014",1115
+91,3,17278,"Metro light rail To Sycamore/Main",0,"17016",1115
+91,3,17279,"Metro light rail To Sycamore/Main",0,"17018",1115
+91,3,17280,"Metro light rail To Sycamore/Main",0,"17020",1115
+91,3,17281,"Metro light rail To Sycamore/Main",0,"17022",1115
+91,3,17282,"Metro light rail To Sycamore/Main",0,"17024",1115
+91,3,17283,"Metro light rail To Sycamore/Main",0,"17026",1115
+91,3,17284,"Metro light rail To Sycamore/Main",0,"17028",1115
+91,3,17285,"Metro light rail To Sycamore/Main",0,"17030",1115
+91,3,17286,"Metro light rail To Sycamore/Main",0,"17032",1115
+91,3,17287,"Metro light rail To Sycamore/Main",0,"17034",1115
+91,3,17288,"Metro light rail To Sycamore/Main",0,"17036",1115
+91,3,17289,"Metro light rail To Sycamore/Main",0,"17038",1115
+91,3,17290,"Metro light rail To Sycamore/Main",0,"17040",1115
+91,3,17291,"Metro light rail To Sycamore/Main",0,"17042",1115
+91,3,17292,"Metro light rail To Sycamore/Main",0,"17044",1115
+91,3,17293,"Metro light rail To Sycamore/Main",0,"17046",1115
+91,3,17294,"Metro light rail To Sycamore/Main",0,"17048",1115
+91,3,17295,"Metro light rail To Sycamore/Main",0,"17050",1115
+91,3,17296,"Metro light rail To Sycamore/Main",0,"17052",1115
+91,3,17297,"Metro light rail To Sycamore/Main",0,"17054",1115
+91,3,17298,"Metro light rail To Sycamore/Main",0,"17056",1115
+91,3,17299,"Metro light rail To Sycamore/Main",0,"17058",1115
+91,3,17300,"Metro light rail To Sycamore/Main",0,"17060",1115
+91,3,17301,"Metro light rail To Sycamore/Main",0,"17062",1115
+91,3,17302,"Metro light rail To Sycamore/Main",0,"17064",1115
+91,3,17303,"Metro light rail To Sycamore/Main",0,"17066",1115
+91,3,17304,"Metro light rail To Sycamore/Main",0,"17068",1115
+91,3,17305,"Metro light rail To Sycamore/Main",0,"17070",1115
+91,3,17306,"Metro light rail To Sycamore/Main",0,"17072",1115
+91,3,17307,"Metro light rail To Sycamore/Main",0,"17074",1115
+91,3,17308,"Metro light rail To Sycamore/Main",0,"17077",1115
+91,3,17309,"Metro light rail To Sycamore/Main",0,"17276",1115
+91,3,17310,"Metro light rail To Sycamore/Main",0,"17278",1115
+91,3,17311,"Metro light rail To Sycamore/Main",0,"17280",1115
+91,3,17312,"Metro light rail To Sycamore/Main",0,"17282",1115
+91,3,17313,"Metro light rail To Sycamore/Main",0,"17284",1115
+91,3,17314,"Metro light rail To Sycamore/Main",0,"17010",1116
+91,3,17315,"Metro light rail To Sycamore/Main",0,"17080",1116
+91,3,17316,"Metro light rail To Sycamore/Main",0,"17082",1116
+91,3,17317,"Metro light rail To Sycamore/Main",0,"17084",1116
+91,3,17318,"Metro light rail To Sycamore/Main",0,"17086",1116
+91,3,17319,"Metro light rail To Sycamore/Main",0,"17088",1116
+91,3,17320,"Metro light rail To 44th St/Washington",0,"17949",1117
+91,3,17321,"Metro light rail To 44th St/Washington",0,"17075",1117
+91,3,17322,"Metro light rail To 44th St/Washington",0,"17078",1117
+91,3,17323,"Metro light rail To 44th St/Washington",0,"17285",1117
+91,3,17324,"Metro light rail To 44th St/Washington",0,"17287",1117
+91,3,17325,"Metro light rail To 44th St/Washington",0,"17286",1118
+91,3,17326,"Metro light rail To 44th St/Washington",0,"17288",1118
+91,3,17327,"Metro light rail To Sycamore/Main",0,"17001",1119
+91,3,17328,"Metro light rail To Sycamore/Main",0,"17003",1119
+91,3,17329,"Metro light rail To Sycamore/Main",0,"17009",1119
+91,3,17330,"Metro light rail To Sycamore/Main",0,"17002",1120
+91,3,17331,"Metro light rail To Sycamore/Main",0,"17004",1120
+91,3,17332,"Metro light rail To Sycamore/Main",0,"17005",1120
+91,3,17333,"Metro light rail To Sycamore/Main",0,"17011",1120
+91,4,17334,"Metro light rail To Sycamore/Main",0,"17007",1121
+91,4,17335,"Metro light rail To Sycamore/Main",0,"17013",1121
+91,4,17336,"Metro light rail To Sycamore/Main",0,"17015",1121
+91,4,17337,"Metro light rail To Sycamore/Main",0,"17017",1121
+91,4,17338,"Metro light rail To Sycamore/Main",0,"17019",1121
+91,4,17339,"Metro light rail To Sycamore/Main",0,"17021",1121
+91,4,17340,"Metro light rail To Sycamore/Main",0,"17023",1121
+91,4,17341,"Metro light rail To Sycamore/Main",0,"17025",1121
+91,4,17342,"Metro light rail To Sycamore/Main",0,"17027",1121
+91,4,17343,"Metro light rail To Sycamore/Main",0,"17029",1121
+91,4,17344,"Metro light rail To Sycamore/Main",0,"17031",1121
+91,4,17345,"Metro light rail To Sycamore/Main",0,"17033",1121
+91,4,17346,"Metro light rail To Sycamore/Main",0,"17035",1121
+91,4,17347,"Metro light rail To Sycamore/Main",0,"17037",1121
+91,4,17348,"Metro light rail To Sycamore/Main",0,"17039",1121
+91,4,17349,"Metro light rail To Sycamore/Main",0,"17041",1121
+91,4,17350,"Metro light rail To Sycamore/Main",0,"17043",1121
+91,4,17351,"Metro light rail To Sycamore/Main",0,"17045",1121
+91,4,17352,"Metro light rail To Sycamore/Main",0,"17047",1121
+91,4,17353,"Metro light rail To Sycamore/Main",0,"17049",1121
+91,4,17354,"Metro light rail To Sycamore/Main",0,"17051",1121
+91,4,17355,"Metro light rail To Sycamore/Main",0,"17053",1121
+91,4,17356,"Metro light rail To Sycamore/Main",0,"17055",1121
+91,4,17357,"Metro light rail To Sycamore/Main",0,"17057",1121
+91,4,17358,"Metro light rail To Sycamore/Main",0,"17059",1121
+91,4,17359,"Metro light rail To Sycamore/Main",0,"17061",1121
+91,4,17360,"Metro light rail To Sycamore/Main",0,"17063",1121
+91,4,17361,"Metro light rail To Sycamore/Main",0,"17065",1121
+91,4,17362,"Metro light rail To Sycamore/Main",0,"17067",1121
+91,4,17363,"Metro light rail To Sycamore/Main",0,"17069",1121
+91,4,17364,"Metro light rail To Sycamore/Main",0,"17071",1121
+91,4,17365,"Metro light rail To Sycamore/Main",0,"17073",1121
+91,4,17366,"Metro light rail To Sycamore/Main",0,"17006",1122
+91,4,17367,"Metro light rail To Sycamore/Main",0,"17012",1122
+91,4,17368,"Metro light rail To Sycamore/Main",0,"17076",1122
+91,4,17369,"Metro light rail To Sycamore/Main",0,"17079",1122
+91,4,17370,"Metro light rail To Sycamore/Main",0,"17081",1122
+91,4,17371,"Metro light rail To Sycamore/Main",0,"17083",1122
+91,4,17372,"Metro light rail To Sycamore/Main",0,"17085",1122
+91,4,17373,"Metro light rail To Sycamore/Main",0,"17087",1122
+91,4,17374,"Metro light rail To Sycamore/Main",0,"17089",1122
+91,4,17375,"Metro light rail To Sycamore/Main",0,"17008",1123
+91,4,17376,"Metro light rail To Sycamore/Main",0,"17014",1123
+91,4,17377,"Metro light rail To Sycamore/Main",0,"17016",1123
+91,4,17378,"Metro light rail To Sycamore/Main",0,"17018",1123
+91,4,17379,"Metro light rail To Sycamore/Main",0,"17020",1123
+91,4,17380,"Metro light rail To Sycamore/Main",0,"17022",1123
+91,4,17381,"Metro light rail To Sycamore/Main",0,"17024",1123
+91,4,17382,"Metro light rail To Sycamore/Main",0,"17026",1123
+91,4,17383,"Metro light rail To Sycamore/Main",0,"17028",1123
+91,4,17384,"Metro light rail To Sycamore/Main",0,"17030",1123
+91,4,17385,"Metro light rail To Sycamore/Main",0,"17032",1123
+91,4,17386,"Metro light rail To Sycamore/Main",0,"17034",1123
+91,4,17387,"Metro light rail To Sycamore/Main",0,"17036",1123
+91,4,17388,"Metro light rail To Sycamore/Main",0,"17038",1123
+91,4,17389,"Metro light rail To Sycamore/Main",0,"17040",1123
+91,4,17390,"Metro light rail To Sycamore/Main",0,"17042",1123
+91,4,17391,"Metro light rail To Sycamore/Main",0,"17044",1123
+91,4,17392,"Metro light rail To Sycamore/Main",0,"17046",1123
+91,4,17393,"Metro light rail To Sycamore/Main",0,"17048",1123
+91,4,17394,"Metro light rail To Sycamore/Main",0,"17050",1123
+91,4,17395,"Metro light rail To Sycamore/Main",0,"17052",1123
+91,4,17396,"Metro light rail To Sycamore/Main",0,"17054",1123
+91,4,17397,"Metro light rail To Sycamore/Main",0,"17056",1123
+91,4,17398,"Metro light rail To Sycamore/Main",0,"17058",1123
+91,4,17399,"Metro light rail To Sycamore/Main",0,"17060",1123
+91,4,17400,"Metro light rail To Sycamore/Main",0,"17062",1123
+91,4,17401,"Metro light rail To Sycamore/Main",0,"17064",1123
+91,4,17402,"Metro light rail To Sycamore/Main",0,"17066",1123
+91,4,17403,"Metro light rail To Sycamore/Main",0,"17068",1123
+91,4,17404,"Metro light rail To Sycamore/Main",0,"17070",1123
+91,4,17405,"Metro light rail To Sycamore/Main",0,"17072",1123
+91,4,17406,"Metro light rail To Sycamore/Main",0,"17074",1123
+91,4,17407,"Metro light rail To Sycamore/Main",0,"17077",1123
+91,4,17408,"Metro light rail To Sycamore/Main",0,"17010",1124
+91,4,17409,"Metro light rail To Sycamore/Main",0,"17080",1124
+91,4,17410,"Metro light rail To Sycamore/Main",0,"17082",1124
+91,4,17411,"Metro light rail To Sycamore/Main",0,"17084",1124
+91,4,17412,"Metro light rail To Sycamore/Main",0,"17086",1124
+91,4,17413,"Metro light rail To Sycamore/Main",0,"17088",1124
+91,4,17414,"Metro light rail To 44th St/Washington",0,"17949",1125
+91,4,17415,"Metro light rail To 44th St/Washington",0,"17075",1125
+91,4,17416,"Metro light rail To 44th St/Washington",0,"17078",1125
+91,4,17417,"Metro light rail To 44th St/Washington",0,"17090",1125
+91,4,17418,"Metro light rail To 44th St/Washington",0,"17092",1125
+91,4,17419,"Metro light rail To 44th St/Washington",0,"17091",1126
+91,4,17420,"Metro light rail To 44th St/Washington",0,"17093",1126
+91,4,17421,"Metro light rail To Sycamore/Main",0,"17001",1127
+91,4,17422,"Metro light rail To Sycamore/Main",0,"17003",1127
+91,4,17423,"Metro light rail To Sycamore/Main",0,"17009",1127
+91,4,17424,"Metro light rail To Sycamore/Main",0,"17002",1128
+91,4,17425,"Metro light rail To Sycamore/Main",0,"17004",1128
+91,4,17426,"Metro light rail To Sycamore/Main",0,"17005",1128
+91,4,17427,"Metro light rail To Sycamore/Main",0,"17011",1128
+91,3,17428,"Metro light rail To 19th Ave/Montebello",1,"17105",1129
+91,3,17429,"Metro light rail To 19th Ave/Montebello",1,"17107",1129
+91,3,17430,"Metro light rail To 19th Ave/Montebello",1,"17109",1129
+91,3,17431,"Metro light rail To 19th Ave/Montebello",1,"17111",1129
+91,3,17432,"Metro light rail To 19th Ave/Montebello",1,"17113",1129
+91,3,17433,"Metro light rail To 19th Ave/Montebello",1,"17115",1129
+91,3,17434,"Metro light rail To 19th Ave/Montebello",1,"17117",1129
+91,3,17435,"Metro light rail To 19th Ave/Montebello",1,"17119",1129
+91,3,17436,"Metro light rail To 19th Ave/Montebello",1,"17121",1129
+91,3,17437,"Metro light rail To 19th Ave/Montebello",1,"17123",1129
+91,3,17438,"Metro light rail To 19th Ave/Montebello",1,"17125",1129
+91,3,17439,"Metro light rail To 19th Ave/Montebello",1,"17127",1129
+91,3,17440,"Metro light rail To 19th Ave/Montebello",1,"17129",1129
+91,3,17441,"Metro light rail To 19th Ave/Montebello",1,"17131",1129
+91,3,17442,"Metro light rail To 19th Ave/Montebello",1,"17133",1129
+91,3,17443,"Metro light rail To 19th Ave/Montebello",1,"17135",1129
+91,3,17444,"Metro light rail To 19th Ave/Montebello",1,"17137",1129
+91,3,17445,"Metro light rail To 19th Ave/Montebello",1,"17139",1129
+91,3,17446,"Metro light rail To 19th Ave/Montebello",1,"17141",1129
+91,3,17447,"Metro light rail To 19th Ave/Montebello",1,"17143",1129
+91,3,17448,"Metro light rail To 19th Ave/Montebello",1,"17145",1129
+91,3,17449,"Metro light rail To 19th Ave/Montebello",1,"17147",1129
+91,3,17450,"Metro light rail To 19th Ave/Montebello",1,"17149",1129
+91,3,17451,"Metro light rail To 19th Ave/Montebello",1,"17151",1129
+91,3,17452,"Metro light rail To 19th Ave/Montebello",1,"17153",1129
+91,3,17453,"Metro light rail To 19th Ave/Montebello",1,"17155",1129
+91,3,17454,"Metro light rail To 19th Ave/Montebello",1,"17157",1129
+91,3,17455,"Metro light rail To 19th Ave/Montebello",1,"17159",1129
+91,3,17456,"Metro light rail To 19th Ave/Montebello",1,"17161",1129
+91,3,17457,"Metro light rail To 19th Ave/Montebello",1,"17163",1129
+91,3,17458,"Metro light rail To 19th Ave/Montebello",1,"17165",1129
+91,3,17459,"Metro light rail To 19th Ave/Montebello",1,"17171",1129
+91,3,17460,"Metro light rail To 19th Ave/Montebello",1,"17179",1129
+91,3,17461,"Metro light rail To 19th Ave/Montebello",1,"17181",1129
+91,3,17462,"Metro light rail To 19th Ave/Montebello",1,"17378",1129
+91,3,17463,"Metro light rail To 19th Ave/Montebello",1,"17380",1129
+91,3,17464,"Metro light rail To 19th Ave/Montebello",1,"17382",1129
+91,3,17465,"Metro light rail To 19th Ave/Montebello",1,"17384",1129
+91,3,17466,"Metro light rail To 19th Ave/Montebello",1,"17386",1129
+91,3,17467,"Metro light rail To 19th Ave/Montebello",1,"17099",1130
+91,3,17468,"Metro light rail To 19th Ave/Montebello",1,"17102",1130
+91,3,17469,"Metro light rail To 19th Ave/Montebello",1,"17166",1130
+91,3,17470,"Metro light rail To 19th Ave/Montebello",1,"17173",1130
+91,3,17471,"Metro light rail To 19th Ave/Montebello",1,"17175",1130
+91,3,17472,"Metro light rail To 19th Ave/Montebello",1,"17177",1130
+91,3,17473,"Metro light rail To 19th Ave/Montebello",1,"17100",1131
+91,3,17474,"Metro light rail To 19th Ave/Montebello",1,"17106",1131
+91,3,17475,"Metro light rail To 19th Ave/Montebello",1,"17108",1131
+91,3,17476,"Metro light rail To 19th Ave/Montebello",1,"17110",1131
+91,3,17477,"Metro light rail To 19th Ave/Montebello",1,"17112",1131
+91,3,17478,"Metro light rail To 19th Ave/Montebello",1,"17114",1131
+91,3,17479,"Metro light rail To 19th Ave/Montebello",1,"17116",1131
+91,3,17480,"Metro light rail To 19th Ave/Montebello",1,"17118",1131
+91,3,17481,"Metro light rail To 19th Ave/Montebello",1,"17120",1131
+91,3,17482,"Metro light rail To 19th Ave/Montebello",1,"17122",1131
+91,3,17483,"Metro light rail To 19th Ave/Montebello",1,"17124",1131
+91,3,17484,"Metro light rail To 19th Ave/Montebello",1,"17126",1131
+91,3,17485,"Metro light rail To 19th Ave/Montebello",1,"17128",1131
+91,3,17486,"Metro light rail To 19th Ave/Montebello",1,"17130",1131
+91,3,17487,"Metro light rail To 19th Ave/Montebello",1,"17132",1131
+91,3,17488,"Metro light rail To 19th Ave/Montebello",1,"17134",1131
+91,3,17489,"Metro light rail To 19th Ave/Montebello",1,"17136",1131
+91,3,17490,"Metro light rail To 19th Ave/Montebello",1,"17138",1131
+91,3,17491,"Metro light rail To 19th Ave/Montebello",1,"17140",1131
+91,3,17492,"Metro light rail To 19th Ave/Montebello",1,"17142",1131
+91,3,17493,"Metro light rail To 19th Ave/Montebello",1,"17144",1131
+91,3,17494,"Metro light rail To 19th Ave/Montebello",1,"17146",1131
+91,3,17495,"Metro light rail To 19th Ave/Montebello",1,"17148",1131
+91,3,17496,"Metro light rail To 19th Ave/Montebello",1,"17150",1131
+91,3,17497,"Metro light rail To 19th Ave/Montebello",1,"17152",1131
+91,3,17498,"Metro light rail To 19th Ave/Montebello",1,"17154",1131
+91,3,17499,"Metro light rail To 19th Ave/Montebello",1,"17156",1131
+91,3,17500,"Metro light rail To 19th Ave/Montebello",1,"17158",1131
+91,3,17501,"Metro light rail To 19th Ave/Montebello",1,"17160",1131
+91,3,17502,"Metro light rail To 19th Ave/Montebello",1,"17162",1131
+91,3,17503,"Metro light rail To 19th Ave/Montebello",1,"17164",1131
+91,3,17504,"Metro light rail To 19th Ave/Montebello",1,"17170",1131
+91,3,17505,"Metro light rail To 19th Ave/Montebello",1,"17379",1131
+91,3,17506,"Metro light rail To 19th Ave/Montebello",1,"17381",1131
+91,3,17507,"Metro light rail To 19th Ave/Montebello",1,"17383",1131
+91,3,17508,"Metro light rail To 19th Ave/Montebello",1,"17385",1131
+91,3,17509,"Metro light rail To 19th Ave/Montebello",1,"17098",1132
+91,3,17510,"Metro light rail To 19th Ave/Montebello",1,"17104",1132
+91,3,17511,"Metro light rail To 19th Ave/Montebello",1,"17168",1132
+91,3,17512,"Metro light rail To 19th Ave/Montebello",1,"17174",1132
+91,3,17513,"Metro light rail To 19th Ave/Montebello",1,"17176",1132
+91,3,17514,"Metro light rail To 19th Ave/Montebello",1,"17178",1132
+91,3,17515,"Metro light rail To 19th Ave/Montebello",1,"17180",1132
+91,3,17516,"Metro light rail To 19th Ave/Montebello",1,"17182",1132
+91,3,17517,"Metro light rail To Mill/3rd St",1,"17169",1133
+91,3,17518,"Metro light rail To Mill/3rd St",1,"17388",1133
+91,3,17519,"Metro light rail To Mill/3rd St",1,"17390",1133
+91,3,17520,"Metro light rail To 19th Ave/Montebello",1,"17094",1134
+91,3,17521,"Metro light rail To 19th Ave/Montebello",1,"17096",1134
+91,3,17522,"Metro light rail To 19th Ave/Montebello",1,"17945",1134
+91,3,17523,"Metro light rail To 19th Ave/Montebello",1,"17101",1134
+91,3,17524,"Valley Metro Rail To 19th Ave/Montebello",1,"17095",1135
+91,3,17525,"Valley Metro Rail To 19th Ave/Montebello",1,"17097",1135
+91,3,17526,"Valley Metro Rail To 19th Ave/Montebello",1,"17103",1135
+91,3,17527,"Metro light rail To Mill/3rd St",1,"17167",1136
+91,3,17528,"Metro light rail To Mill/3rd St",1,"17172",1136
+91,3,17529,"Metro light rail To Mill/3rd St",1,"17387",1136
+91,3,17530,"Metro light rail To Mill/3rd St",1,"17389",1136
+91,4,17531,"Metro light rail To 19th Ave/Montebello",1,"17105",1137
+91,4,17532,"Metro light rail To 19th Ave/Montebello",1,"17107",1137
+91,4,17533,"Metro light rail To 19th Ave/Montebello",1,"17109",1137
+91,4,17534,"Metro light rail To 19th Ave/Montebello",1,"17111",1137
+91,4,17535,"Metro light rail To 19th Ave/Montebello",1,"17113",1137
+91,4,17536,"Metro light rail To 19th Ave/Montebello",1,"17115",1137
+91,4,17537,"Metro light rail To 19th Ave/Montebello",1,"17117",1137
+91,4,17538,"Metro light rail To 19th Ave/Montebello",1,"17119",1137
+91,4,17539,"Metro light rail To 19th Ave/Montebello",1,"17121",1137
+91,4,17540,"Metro light rail To 19th Ave/Montebello",1,"17123",1137
+91,4,17541,"Metro light rail To 19th Ave/Montebello",1,"17125",1137
+91,4,17542,"Metro light rail To 19th Ave/Montebello",1,"17127",1137
+91,4,17543,"Metro light rail To 19th Ave/Montebello",1,"17129",1137
+91,4,17544,"Metro light rail To 19th Ave/Montebello",1,"17131",1137
+91,4,17545,"Metro light rail To 19th Ave/Montebello",1,"17133",1137
+91,4,17546,"Metro light rail To 19th Ave/Montebello",1,"17135",1137
+91,4,17547,"Metro light rail To 19th Ave/Montebello",1,"17137",1137
+91,4,17548,"Metro light rail To 19th Ave/Montebello",1,"17139",1137
+91,4,17549,"Metro light rail To 19th Ave/Montebello",1,"17141",1137
+91,4,17550,"Metro light rail To 19th Ave/Montebello",1,"17143",1137
+91,4,17551,"Metro light rail To 19th Ave/Montebello",1,"17145",1137
+91,4,17552,"Metro light rail To 19th Ave/Montebello",1,"17147",1137
+91,4,17553,"Metro light rail To 19th Ave/Montebello",1,"17149",1137
+91,4,17554,"Metro light rail To 19th Ave/Montebello",1,"17151",1137
+91,4,17555,"Metro light rail To 19th Ave/Montebello",1,"17153",1137
+91,4,17556,"Metro light rail To 19th Ave/Montebello",1,"17155",1137
+91,4,17557,"Metro light rail To 19th Ave/Montebello",1,"17157",1137
+91,4,17558,"Metro light rail To 19th Ave/Montebello",1,"17159",1137
+91,4,17559,"Metro light rail To 19th Ave/Montebello",1,"17161",1137
+91,4,17560,"Metro light rail To 19th Ave/Montebello",1,"17163",1137
+91,4,17561,"Metro light rail To 19th Ave/Montebello",1,"17165",1137
+91,4,17562,"Metro light rail To 19th Ave/Montebello",1,"17171",1137
+91,4,17563,"Metro light rail To 19th Ave/Montebello",1,"17099",1138
+91,4,17564,"Metro light rail To 19th Ave/Montebello",1,"17102",1138
+91,4,17565,"Metro light rail To 19th Ave/Montebello",1,"17166",1138
+91,4,17566,"Metro light rail To 19th Ave/Montebello",1,"17173",1138
+91,4,17567,"Metro light rail To 19th Ave/Montebello",1,"17175",1138
+91,4,17568,"Metro light rail To 19th Ave/Montebello",1,"17177",1138
+91,4,17569,"Metro light rail To 19th Ave/Montebello",1,"17179",1138
+91,4,17570,"Metro light rail To 19th Ave/Montebello",1,"17181",1138
+91,4,17571,"Metro light rail To 19th Ave/Montebello",1,"17100",1139
+91,4,17572,"Metro light rail To 19th Ave/Montebello",1,"17106",1139
+91,4,17573,"Metro light rail To 19th Ave/Montebello",1,"17108",1139
+91,4,17574,"Metro light rail To 19th Ave/Montebello",1,"17110",1139
+91,4,17575,"Metro light rail To 19th Ave/Montebello",1,"17112",1139
+91,4,17576,"Metro light rail To 19th Ave/Montebello",1,"17114",1139
+91,4,17577,"Metro light rail To 19th Ave/Montebello",1,"17116",1139
+91,4,17578,"Metro light rail To 19th Ave/Montebello",1,"17118",1139
+91,4,17579,"Metro light rail To 19th Ave/Montebello",1,"17120",1139
+91,4,17580,"Metro light rail To 19th Ave/Montebello",1,"17122",1139
+91,4,17581,"Metro light rail To 19th Ave/Montebello",1,"17124",1139
+91,4,17582,"Metro light rail To 19th Ave/Montebello",1,"17126",1139
+91,4,17583,"Metro light rail To 19th Ave/Montebello",1,"17128",1139
+91,4,17584,"Metro light rail To 19th Ave/Montebello",1,"17130",1139
+91,4,17585,"Metro light rail To 19th Ave/Montebello",1,"17132",1139
+91,4,17586,"Metro light rail To 19th Ave/Montebello",1,"17134",1139
+91,4,17587,"Metro light rail To 19th Ave/Montebello",1,"17136",1139
+91,4,17588,"Metro light rail To 19th Ave/Montebello",1,"17138",1139
+91,4,17589,"Metro light rail To 19th Ave/Montebello",1,"17140",1139
+91,4,17590,"Metro light rail To 19th Ave/Montebello",1,"17142",1139
+91,4,17591,"Metro light rail To 19th Ave/Montebello",1,"17144",1139
+91,4,17592,"Metro light rail To 19th Ave/Montebello",1,"17146",1139
+91,4,17593,"Metro light rail To 19th Ave/Montebello",1,"17148",1139
+91,4,17594,"Metro light rail To 19th Ave/Montebello",1,"17150",1139
+91,4,17595,"Metro light rail To 19th Ave/Montebello",1,"17152",1139
+91,4,17596,"Metro light rail To 19th Ave/Montebello",1,"17154",1139
+91,4,17597,"Metro light rail To 19th Ave/Montebello",1,"17156",1139
+91,4,17598,"Metro light rail To 19th Ave/Montebello",1,"17158",1139
+91,4,17599,"Metro light rail To 19th Ave/Montebello",1,"17160",1139
+91,4,17600,"Metro light rail To 19th Ave/Montebello",1,"17162",1139
+91,4,17601,"Metro light rail To 19th Ave/Montebello",1,"17164",1139
+91,4,17602,"Metro light rail To 19th Ave/Montebello",1,"17170",1139
+91,4,17603,"Metro light rail To 19th Ave/Montebello",1,"17098",1140
+91,4,17604,"Metro light rail To 19th Ave/Montebello",1,"17104",1140
+91,4,17605,"Metro light rail To 19th Ave/Montebello",1,"17168",1140
+91,4,17606,"Metro light rail To 19th Ave/Montebello",1,"17174",1140
+91,4,17607,"Metro light rail To 19th Ave/Montebello",1,"17176",1140
+91,4,17608,"Metro light rail To 19th Ave/Montebello",1,"17178",1140
+91,4,17609,"Metro light rail To 19th Ave/Montebello",1,"17180",1140
+91,4,17610,"Metro light rail To 19th Ave/Montebello",1,"17182",1140
+91,4,17611,"Metro light rail To Mill/3rd St",1,"17169",1141
+91,4,17612,"Metro light rail To Mill/3rd St",1,"17183",1141
+91,4,17613,"Metro light rail To Mill/3rd St",1,"17185",1141
+91,4,17614,"Metro light rail To 19th Ave/Montebello",1,"17094",1142
+91,4,17615,"Metro light rail To 19th Ave/Montebello",1,"17096",1142
+91,4,17616,"Metro light rail To 19th Ave/Montebello",1,"17945",1142
+91,4,17617,"Metro light rail To 19th Ave/Montebello",1,"17101",1142
+91,4,17618,"Valley Metro Rail To 19th Ave/Montebello",1,"17095",1143
+91,4,17619,"Valley Metro Rail To 19th Ave/Montebello",1,"17097",1143
+91,4,17620,"Valley Metro Rail To 19th Ave/Montebello",1,"17103",1143
+91,4,17621,"Metro light rail To Mill/3rd St",1,"17167",1144
+91,4,17622,"Metro light rail To Mill/3rd St",1,"17172",1144
+91,4,17623,"Metro light rail To Mill/3rd St",1,"17184",1144
+91,4,17624,"Metro light rail To Mill/3rd St",1,"17186",1144
