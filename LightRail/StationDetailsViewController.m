@@ -92,7 +92,7 @@
     // Get array of arrival times
     NSLog(@"Getting arrival times...");
     StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:self.selectedStation.stopID.intValue];
-    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:WestboundDirectionID]];
+    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:EastboundDirectionID]];
     //NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:self.eastbound?EastboundDirectionID:WestboundDirectionID]];
     for (NSString *str in arrivalTimes)
     {

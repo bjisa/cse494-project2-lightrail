@@ -92,44 +92,53 @@
     }
     NSLog(@"%i times added, %i times NOT added.", added, notadded);
     
-    // Fix hours lists that make no sense
-    NSLog(@"Fixing hours list");
-    NSLog(@"array.count = %lu", (unsigned long)array.count);
-    for (int i = 0; i < array.count; i++)
+    // Proceed if we get data in our array
+    if (array.count > 0)
     {
-        NSArray *temp = [NSArray arrayWithArray:[array[i] componentsSeparatedByString:@":"]];
-        //NSLog(@"temp = %@", temp);
-        int hour = (int)[temp[0] integerValue] % 24;
-        int minute = (int)[temp[1] integerValue] % 60;
-        int second = (int)[temp[2] integerValue] % 60;
-        array[i] = [NSString stringWithFormat:@"%02i:%02i:%02i", hour, minute, second];
+        // Fix hours lists that make no sense
+        NSLog(@"Fixing hours list");
+        NSLog(@"array.count = %lu", (unsigned long)array.count);
+        for (int i = 0; i < array.count; i++)
+        {
+            NSArray *temp = [NSArray arrayWithArray:[array[i] componentsSeparatedByString:@":"]];
+            //NSLog(@"temp = %@", temp);
+            int hour = (int)[temp[0] integerValue] % 24;
+            int minute = (int)[temp[1] integerValue] % 60;
+            int second = (int)[temp[2] integerValue] % 60;
+            array[i] = [NSString stringWithFormat:@"%02i:%02i:%02i", hour, minute, second];
+        }
+        
+        // Sort the arrival times array
+        NSLog(@"Sorting the array");
+        [array sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+        
+        // Remove duplicate values
+        NSLog(@"Removing duplicate values");
+        NSLog(@"array.count = %lu", (unsigned long)array.count);
+        NSMutableArray *newArray = [[NSMutableArray alloc] initWithObjects:[array objectAtIndex:0], nil];
+        NSLog(@"Instantiated newArray");
+        for (int i = 1; i < array.count; i++)
+        {
+            if (![[array objectAtIndex:i] isEqualToString:[array objectAtIndex:(i-1)]])
+            {
+                [newArray addObject:[array objectAtIndex:i]];
+                //NSLog(@"Adding array[%i] = %@", i, array[i]);
+            }
+            else
+            {
+                //NSLog(@"NOT adding array[%i] = %@", i, array[i]);
+            }
+        }
+        
+        // Return the processed array
+        NSLog(@"Returning the processed array");
+        return [NSArray arrayWithArray:newArray];
     }
-    
-    // Sort the arrival times array
-    NSLog(@"Sorting the array");
-    [array sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    
-    // Remove duplicate values
-    NSLog(@"Removing duplicate values");
-    NSLog(@"array.count = %lu", (unsigned long)array.count);
-    NSMutableArray *newArray = [[NSMutableArray alloc] initWithObjects:[array objectAtIndex:0], nil];
-    NSLog(@"Instantiated newArray");
-    for (int i = 1; i < array.count; i++)
+    else
     {
-        if (![[array objectAtIndex:i] isEqualToString:[array objectAtIndex:(i-1)]])
-        {
-            [newArray addObject:[array objectAtIndex:i]];
-            //NSLog(@"Adding array[%i] = %@", i, array[i]);
-        }
-        else
-        {
-            //NSLog(@"NOT adding array[%i] = %@", i, array[i]);
-        }
+        // There are no values in the array
+        return nil;
     }
-    
-    // Return the processed array
-    NSLog(@"Returning the processed array");
-    return [NSArray arrayWithArray:newArray];
 }
 
 
