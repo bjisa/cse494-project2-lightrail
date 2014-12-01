@@ -17,6 +17,8 @@ NSString * const DirectionUserDefaultKey = @"DIRECTION_EASTBOUND_OR_WESTBOUND_KE
 
 uint const EastboundDirectionID = 0;
 uint const WestboundDirectionID = 1;
+uint const NorthboundDirectionID = 2;
+uint const SouthboundDirectionID = 3;
 uint const UnknownDirectionID = -1;
 
 
