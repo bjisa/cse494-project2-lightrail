@@ -15,8 +15,9 @@ extern NSString * const DirectionEastbound;
 
 extern NSString * const DirectionUserDefaultKey;
 
-extern int const EastboundDirectionID;
-extern int const WestboundDirectionID;
+extern uint const EastboundDirectionID;
+extern uint const WestboundDirectionID;
+extern uint const UnknownDirectionID;
 
 
 @end

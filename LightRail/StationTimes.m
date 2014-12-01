@@ -91,6 +91,11 @@
         }
     }
     
+    // Remove stops with a tripID that does not have the desired direction
+    
+    
+    
+    
     // Return the processed array
     return [NSArray arrayWithArray:newArray];
 }
@@ -128,6 +133,11 @@
             [newArray addObject:[array objectAtIndex:i]];
         }
     }
+    
+    // Remove stops with a tripID that does not have the desired direction
+    
+    
+    
     
     // Return the processed array
     return [NSArray arrayWithArray:newArray];

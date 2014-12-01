@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "TripModel.h"
+#import "Constants.h"
 
 @interface TripAnalyzer : NSObject
 
-- (int) getTripDirection:(long) tripID;
+@property NSArray *trips;
+
+- (id) init;
+- (uint) getTripDirection:(long) tripID;
 
 
 @end
