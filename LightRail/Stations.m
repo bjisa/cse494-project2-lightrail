@@ -54,9 +54,7 @@ static Stations *theStations = nil;
             }
         }
     }
-    
     return self;
-    
 }
 
 @end
