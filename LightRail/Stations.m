@@ -15,7 +15,8 @@ static Stations *theStations = nil;
 
 +(Stations *) sharedStations {
     
-    if (theStations == nil) {
+    if (theStations == nil)
+    {
         theStations = [[Stations alloc] init];
     }
     
@@ -27,7 +28,8 @@ static Stations *theStations = nil;
     
     self = [super init];
     
-    if (self) {
+    if (self)
+    {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
         NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         
@@ -36,16 +38,20 @@ static Stations *theStations = nil;
         
         for (NSString *item in items) {
             
-            NSArray *station = [item componentsSeparatedByString:@","];
-            NSMutableDictionary *stationdict = [NSMutableDictionary new];
-            
-            [stationdict setObject:station[0] forKey:@"stop_id"];
-            [stationdict setObject:station[2] forKey:@"name"];
-            [stationdict setObject:station[4] forKey:@"latitude"];
-            [stationdict setObject:station[5] forKey:@"longitude"];
-            
-            StationModel * newStation = [[StationModel alloc] initWithCSVDictionary:stationdict];
-            [self.stationlist addObject:newStation];
+            if (![[item stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""])
+            {
+                NSLog(@"item = %@", item);
+                NSArray *station = [item componentsSeparatedByString:@","];
+                NSMutableDictionary *stationdict = [NSMutableDictionary new];
+                
+                [stationdict setObject:station[2] forKey:@"stop_id"];
+                [stationdict setObject:station[3] forKey:@"name"];
+                [stationdict setObject:station[5] forKey:@"latitude"];
+                [stationdict setObject:station[6] forKey:@"longitude"];
+                
+                StationModel * newStation = [[StationModel alloc] initWithCSVDictionary:stationdict];
+                [self.stationlist addObject:newStation];
+            }
         }
     }
     

@@ -11,6 +11,8 @@
 @interface StationModel : NSObject
 
 @property NSString *stopID;
+@property NSString *stopIDEastbound;
+@property NSString *stopIDWestbound;
 @property NSString *name;
 @property NSString *latitude;
 @property NSString *longitude;

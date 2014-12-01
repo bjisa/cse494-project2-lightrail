@@ -10,9 +10,13 @@
 
 @implementation StationModel
 
--(id) initWithCSVDictionary:(NSDictionary *)dict{
-    if (self = [super init]) {
-        self.stopID = dict[@"stop_id"];
+-(id) initWithCSVDictionary:(NSDictionary *)dict
+{
+    if (self = [super init])
+    {
+        self.stopID = dict[@"stop_code"];
+        self.stopIDEastbound = dict[@"stop_id_east"];
+        self.stopIDWestbound = dict[@"stop_id_west"];
         self.name = dict[@"name"];
         self.latitude = dict[@"latitude"];
         self.longitude = dict[@"longitude"];
