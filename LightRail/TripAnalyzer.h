@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TripModel.h"
 
 @interface TripAnalyzer : NSObject
+
+- (int) getTripDirection:(long) tripID;
+
 
 @end

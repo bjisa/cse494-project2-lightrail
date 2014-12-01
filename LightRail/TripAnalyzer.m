@@ -10,4 +10,11 @@
 
 @implementation TripAnalyzer
 
+- (int) getTripDirection:(long) tripID
+{
+    
+    
+    return 0;
+}
+
 @end
