@@ -46,25 +46,25 @@
     if (self)
     {
         // DEBUG STATEMENTS
-        NSLog(@"Inside TripAnalyzer.getTripDirection(tripID)");
+        //NSLog(@"Inside TripAnalyzer.getTripDirection(tripID)");
         
         // Binary Search
         return [self performBinarySearch:tripID];
     }
     
     // Direction was not found
-    NSLog(@"Direction  NOT found, assuming direction = %i", EastboundDirectionID);
+    NSLog(@"Direction  NOT found, assuming direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 
 
 - (uint) performBinarySearch:(long) tripID
 {
-    NSLog(@"Performing Binary Search");
+    NSLog(@"Performing Binary Search, tripID = %li", tripID);
     
     // Set the initial minValue and maxValue to search entire array
     long minValue = 0;
-    long maxValue = self.trips.count - 1;
+    long maxValue = self.fileDetails.count - 1;
     
     // Search while [minValue, maxValue] is not empty
     while (minValue < maxValue)
@@ -95,14 +95,14 @@
     }
     
     // Direction was not found
-    NSLog(@"Direction NOT found, returning direction = %i", EastboundDirectionID);
+    NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 
 
 - (int) performLinearSearch:(long) tripID
 {
-    NSLog(@"Performing Linear Search");
+    NSLog(@"Performing Linear Search, tripID = %li", tripID);
 
     // Initialize searching parameters
     Boolean found = false;
@@ -130,7 +130,7 @@
     }
     
     // Direction was not found
-    NSLog(@"Direction NOT found, returning direction = %i", EastboundDirectionID);
+    NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 

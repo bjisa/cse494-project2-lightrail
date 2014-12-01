@@ -59,19 +59,46 @@
 
 
 // Get a list of the train's arrival times
-- (NSArray *) getTrainArrivalTimesArray
+- (NSArray *) getTrainArrivalTimesArray: (int) direction
 {
     // Collect all arrival times into an array
+    NSLog(@"Performing trip analysis");
     NSMutableArray *array = [[NSMutableArray alloc] init];
+    int added = 0;
+    int notadded = 0;
+    TripAnalyzer *analyzer = [[TripAnalyzer alloc] init];
+    NSString *lastArrivalTime = [NSString new];
     for (StationStopDetails *item in self.stationStopDetailsArray)
     {
-        [array addObject:item.arrival_time];
+        if (![item.arrival_time isEqualToString:lastArrivalTime])
+        {
+            NSLog(@"Trip ID = %li", item.trip_id);
+            lastArrivalTime = item.arrival_time;
+            int directionFound = [analyzer getTripDirection:item.trip_id];
+            
+            NSLog(@"Trip directionFound = %i, direction wanted = %i", directionFound, direction);
+            if (directionFound == direction)
+            {
+                [array addObject:item.arrival_time];
+                NSLog(@"Arrival Time '%@' added", item.arrival_time);
+                added++;
+            }
+            else
+            {
+                NSLog(@"Arrival Time '%@' NOT added", item.arrival_time);
+                notadded++;
+            }
+        }
     }
+    NSLog(@"%i times added, %i times NOT added.", added, notadded);
     
     // Fix hours lists that make no sense
+    NSLog(@"Fixing hours list");
+    NSLog(@"array.count = %lu", (unsigned long)array.count);
     for (int i = 0; i < array.count; i++)
     {
         NSArray *temp = [NSArray arrayWithArray:[array[i] componentsSeparatedByString:@":"]];
+        //NSLog(@"temp = %@", temp);
         int hour = (int)[temp[0] integerValue] % 24;
         int minute = (int)[temp[1] integerValue] % 60;
         int second = (int)[temp[2] integerValue] % 60;
@@ -79,36 +106,45 @@
     }
     
     // Sort the arrival times array
+    NSLog(@"Sorting the array");
     [array sortUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     // Remove duplicate values
+    NSLog(@"Removing duplicate values");
+    NSLog(@"array.count = %lu", (unsigned long)array.count);
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithObjects:[array objectAtIndex:0], nil];
-    for (int i = 1; i < [array count]; i++)
+    NSLog(@"Instantiated newArray");
+    for (int i = 1; i < array.count; i++)
     {
         if (![[array objectAtIndex:i] isEqualToString:[array objectAtIndex:(i-1)]])
         {
             [newArray addObject:[array objectAtIndex:i]];
+            //NSLog(@"Adding array[%i] = %@", i, array[i]);
+        }
+        else
+        {
+            //NSLog(@"NOT adding array[%i] = %@", i, array[i]);
         }
     }
     
-    // Remove stops with a tripID that does not have the desired direction
-    
-    
-    
-    
     // Return the processed array
+    NSLog(@"Returning the processed array");
     return [NSArray arrayWithArray:newArray];
 }
 
 
 // Get a list of the train's departure times
-- (NSArray *) getTrainDepartureTimesArray
+- (NSArray *) getTrainDepartureTimesArray: (int) direction
 {
     // Collect all arrival times into an array
     NSMutableArray *array = [[NSMutableArray alloc] init];
+    TripAnalyzer *analyzer = [[TripAnalyzer alloc] init];
     for (StationStopDetails *item in self.stationStopDetailsArray)
     {
-        [array addObject:item.departure_time];
+        if ([analyzer getTripDirection:item.trip_id] == direction)
+        {
+            [array addObject:item.departure_time];
+        }
     }
     
     // Fix hours lists that make no sense
@@ -126,7 +162,7 @@
     
     // Remove duplicate values
     NSMutableArray *newArray = [[NSMutableArray alloc] initWithObjects:[array objectAtIndex:0], nil];
-    for (int i = 1; i < [array count]; i++)
+    for (int i = 1; i < array.count; i++)
     {
         if (![[array objectAtIndex:i] isEqualToString:[array objectAtIndex:(i-1)]])
         {
@@ -135,6 +171,7 @@
     }
     
     // Remove stops with a tripID that does not have the desired direction
+    // This step should be done AFTER removing duplicates since a search (binary search) may run in O(log n) worst case
     
     
     

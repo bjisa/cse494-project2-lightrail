@@ -91,9 +91,9 @@
 - (void) getNextCoupleTimes
 {
     // Get array of arrival times
-    StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:self.selectedStation.stopID.intValue];
-    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:stationTimes.getTrainArrivalTimesArray];
     NSLog(@"Getting arrival times...");
+    StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:self.selectedStation.stopID.intValue];
+    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:WestboundDirectionID]];
     for (NSString *str in arrivalTimes)
     {
         NSLog(@"%@", str);
