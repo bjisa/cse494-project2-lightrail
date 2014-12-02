@@ -146,6 +146,7 @@ int const TrainTimeEqualToCurrentTime = 0;
         i--;
     }
     i++;
+    i++;
     
     // Print the next 4 times into the data labels
     self.time1Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
@@ -249,11 +250,11 @@ int const TrainTimeEqualToCurrentTime = 0;
         }
         else if (hour == 12)    // PM at about noonish
         {
-            return [str stringByAppendingString:@" PM"];
+            return [NSString stringWithFormat:@"%i:%02i:%02i PM", hour, minute, second];
         }
         else                    // AM
         {
-            return [str stringByAppendingString:@" AM"];
+            return [NSString stringWithFormat:@"%i:%02i:%02i AM", hour, minute, second];
         }
     }
     
