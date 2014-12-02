@@ -36,7 +36,7 @@
         // DEBUG STATEMENTS
         //NSLog(@"Path: %@", path);
         //NSLog(@"Content:\n%@", content);
-        NSLog(@"stopTimeDetails.count = %lu", (unsigned long)stopTimeDetails.count);
+        //NSLog(@"stopTimeDetails.count = %lu", (unsigned long)stopTimeDetails.count);
         
         // Copy the stations with the desired ID into the mutable array
         self.stationStopDetailsArray = [[NSMutableArray alloc] init];

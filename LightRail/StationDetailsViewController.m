@@ -117,16 +117,16 @@ int const TrainTimeEqualToCurrentTime = 0;
     [self logDirection];
     
     // Get array of arrival times
-    NSLog(@"Getting arrival times...");
+    //NSLog(@"Getting arrival times...");
     StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:[self getStationIDForDirection:currentDirection]];
     NSMutableArray *arrivalTimes = [[[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:currentDirection]] mutableCopy];
     
     // DEBUG: Print contents of array
-    NSLog(@"Printing the arrival times found...");
-    for (NSString *str in arrivalTimes)
-    {
-        NSLog(@"%@", str);
-    }
+//    NSLog(@"Printing the arrival times found...");
+//    for (NSString *str in arrivalTimes)
+//    {
+//        NSLog(@"%@", str);
+//    }
     //NSLog(@"arrivalTimes.count = %lu", (unsigned long)arrivalTimes.count);
     
 //    // Get current date and time
