@@ -34,11 +34,11 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    StationDetailsViewController *destination = segue.destinationViewController;
-    
     Stations *stations = [Stations sharedStations];
+    StationDetailsViewController *destination = segue.destinationViewController;
     destination.selectedStation = stations.stationlist[self.selectedIndexPathRow];
     
+    NSLog(@"self.selectedIndexPathRow = %li", (long)self.selectedIndexPathRow);
     NSLog(@"destination.selectedStation = %@", destination.selectedStation.stopID);
 }
 
