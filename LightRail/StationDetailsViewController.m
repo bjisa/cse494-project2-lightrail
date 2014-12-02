@@ -18,14 +18,26 @@
 
 @implementation StationDetailsViewController
 
+int const TrainTimeGreaterThanCurrentTime = 1;
+int const TrainTimeLessThanCurrentTime = -1;
+int const TrainTimeEqualToCurrentTime = 0;
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Clear the text in the labels
+    self.time1Label.text = @"";
+    self.time2Label.text = @"";
+    self.time3Label.text = @"";
+    self.time4Label.text = @"";
+    self.time5Label.text = @"";
+    self.time6Label.text = @"";
+    
     // DEBUG: Log the station ID
-    NSLog(@"Station ID = %@", self.selectedStation.stopID);
+    //NSLog(@"Station ID = %@", self.selectedStation.stopID);
     
     // Get the next couple of times
     [self getNextCoupleTimes];
@@ -117,21 +129,132 @@
     }
     //NSLog(@"arrivalTimes.count = %lu", (unsigned long)arrivalTimes.count);
     
-    // Get current date and time
+//    // Get current date and time
+//    NSDate *today = [NSDate date];
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"HH:mm:ss"];    // Capitalized "HH" gets the current time in the 24-hour format that we want here
+//    NSString *currentTime = [dateFormatter stringFromDate:today];
+//    NSLog(@"Current Time: %@", currentTime);
+    
+    // Compare times
+    Boolean isGreater = true;
+    unsigned long i = arrivalTimes.count;
+    i--;
+    while (isGreater && i > 0)
+    {
+        isGreater = ([self compareToCurrentTime:arrivalTimes[i]] == TrainTimeGreaterThanCurrentTime);
+        i--;
+    }
+    i++;
+    
+    // Print the next 4 times into the data labels
+    self.time1Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time2Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time3Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time4Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time5Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time6Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+}
+
+
+// Compare the times
+- (int) compareToCurrentTime:(NSString *)trainTime
+{
+    // Get current time
     NSDate *today = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"HH:mm:ss"];    // Capitalized "HH" gets the current time in the 24-hour format that we want here
     NSString *currentTime = [dateFormatter stringFromDate:today];
-    NSLog(@"Current Time: %@", currentTime);
+    //NSLog(@"Current Time: %@", currentTime);
     
-    // Compare times
+    // Remove possible whitespace from trainTime
+    trainTime = [trainTime stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     
-    // Print the next 4 times
+    // Split times into arrays
+    NSArray *train = [trainTime componentsSeparatedByString:@":"];
+    NSArray *current = [currentTime componentsSeparatedByString:@":"];
+    
+    // Comparison Step #1: Compare the hours
+    if ([train[0] intValue] > [current[0] intValue])
+    {
+        return TrainTimeGreaterThanCurrentTime;
+    }
+    else if ([train[0] intValue] < [current[0] intValue])
+    {
+        return TrainTimeLessThanCurrentTime;
+    }
+    // Comparison Step #2: Compare the minutes
+    if ([train[1] intValue] > [current[1] intValue])
+    {
+        return TrainTimeGreaterThanCurrentTime;
+    }
+    else if ([train[1] intValue] < [current[1] intValue])
+    {
+        return TrainTimeLessThanCurrentTime;
+    }
+    // Comparison Step #3: Compare the seconds
+    if ([train[2] intValue] > [current[2] intValue])
+    {
+        return TrainTimeGreaterThanCurrentTime;
+    }
+    else if ([train[2] intValue] < [current[2] intValue])
+    {
+        return TrainTimeLessThanCurrentTime;
+    }
+    
+    // Train time and current time are equal
+    return TrainTimeEqualToCurrentTime;
 }
 
-
-// Compare the times 
-
+- (NSString *) formatTimeString:(NSString *)str
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setLocale:[NSLocale currentLocale]];
+    [formatter setDateStyle:NSDateFormatterNoStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    NSString *dateString = [formatter stringFromDate:[NSDate date]];
+    NSRange amRange = [dateString rangeOfString:[formatter AMSymbol]];
+    NSRange pmRange = [dateString rangeOfString:[formatter PMSymbol]];
+    Boolean is24hour = (amRange.location == NSNotFound && pmRange.location == NSNotFound);
+    NSLog(@"User wants a 24 hour clock? %@",(is24hour ? @"YES" : @"NO"));
+    
+    if (is24hour)
+    {
+        return str;
+    }
+    else
+    {
+        NSArray *train = [str componentsSeparatedByString:@":"];
+        int hour = [train[0] intValue];
+        int minute = [train[1] intValue];
+        int second = [train[2] intValue];
+        if (hour > 12)          // PM
+        {
+            hour = hour % 12;
+            return [NSString stringWithFormat:@"%i:%02i:%02i PM", hour, minute, second];
+        }
+        else if (hour == 0)     // AM right after midnight
+        {
+            hour = 12;
+            return [NSString stringWithFormat:@"%i:%02i:%02i AM", hour, minute, second];
+        }
+        else if (hour == 12)    // PM at about noonish
+        {
+            return [str stringByAppendingString:@" PM"];
+        }
+        else                    // AM
+        {
+            return [str stringByAppendingString:@" AM"];
+        }
+    }
+    
+    return @"STUB";
+}
 
 
 @end
