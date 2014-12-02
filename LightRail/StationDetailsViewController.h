@@ -18,6 +18,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *time4Label;
 @property (strong, nonatomic) IBOutlet UILabel *time5Label;
 @property (strong, nonatomic) IBOutlet UILabel *time6Label;
+@property (strong, nonatomic) IBOutlet UILabel *time7Label;
+@property (strong, nonatomic) IBOutlet UILabel *time8Label;
 
 @property (strong, nonatomic) IBOutlet UISegmentedControl *directionSelector;
 

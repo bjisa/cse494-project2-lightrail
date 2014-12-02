@@ -159,6 +159,10 @@ int const TrainTimeEqualToCurrentTime = 0;
     self.time5Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
     i++;
     self.time6Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time7Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    i++;
+    self.time8Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
 }
 
 

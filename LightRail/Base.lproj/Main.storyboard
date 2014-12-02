@@ -174,7 +174,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ydh-A7-dAF" userLabel="Time6">
-                                <rect key="frame" x="16" y="376" width="288" height="21"/>
+                                <rect key="frame" x="16" y="380" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DbG-KT-OXO" userLabel="Time7">
+                                <rect key="frame" x="16" y="419" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pkc-M4-Kap" userLabel="Time8">
+                                <rect key="frame" x="16" y="458" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -192,6 +206,8 @@
                         <outlet property="time4Label" destination="7A7-Jl-RLt" id="P0A-4r-zmF"/>
                         <outlet property="time5Label" destination="iuh-2h-0as" id="Pgh-hA-FFg"/>
                         <outlet property="time6Label" destination="ydh-A7-dAF" id="h08-hI-a49"/>
+                        <outlet property="time7Label" destination="DbG-KT-OXO" id="b5K-Es-qBJ"/>
+                        <outlet property="time8Label" destination="pkc-M4-Kap" id="oFh-pa-gSP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0Q-9K-NYE" userLabel="First Responder" sceneMemberID="firstResponder"/>
