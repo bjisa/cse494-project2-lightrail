@@ -53,22 +53,17 @@
 // User modifies the direction selector
 - (IBAction) directionChanged:(id)sender
 {
+    // Get the direction selected by the user
+    NSString *currentDir = [self.directionSelector titleForSegmentAtIndex:self.directionSelector.selectedSegmentIndex];
+    
     // Set the direction
-    if ([[self.directionSelector titleForSegmentAtIndex:self.directionSelector.selectedSegmentIndex] caseInsensitiveCompare:DirectionWestbound] == NSOrderedSame)
-    {
-        self.eastbound = false;
-    }
-    else if ([[self.directionSelector titleForSegmentAtIndex:self.directionSelector.selectedSegmentIndex] caseInsensitiveCompare:DirectionEastbound] == NSOrderedSame)
-    {
-        self.eastbound = true;
-    }
-    else    // Assume eastbound
-    {
-        self.eastbound = true;
-    }
+    self.eastbound = ([currentDir caseInsensitiveCompare:DirectionWestbound] == NSOrderedSame);     // assume westbound
     
     // Log the direction selected by the user
     [self logDirection];
+    
+    // Reload the upcoming arrival times
+    [self getNextCoupleTimes];
 }
 
 
@@ -76,41 +71,67 @@
 - (void) logDirection
 {
     NSUserDefaults *prefs = [[NSUserDefaults alloc] init];
-    if (self.eastbound)
+    [prefs setObject:(self.eastbound ? DirectionEastbound : DirectionWestbound) forKey:DirectionUserDefaultKey];
+}
+
+- (uint) getStationIDForDirection:(uint)direction
+{
+    // Get the correct stop_id_eastbound or stop_id_westbound
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
+    NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSArray *stopArray = [NSArray arrayWithArray:[content componentsSeparatedByString:@"\n"]];
+    
+    //NSLog(@"StopString = %@", stopArray[self.selectedStation.stopID.intValue - 10001]);
+    
+    NSArray *temp = [stopArray[self.selectedStation.stopID.intValue - 10001] componentsSeparatedByString:@","];
+    if (direction == EastboundDirectionID)
     {
-        [prefs setObject:DirectionEastbound forKey:DirectionUserDefaultKey];
+        int value = [temp[0] intValue];
+        return (value != 0) ? value : [temp[1] intValue];
     }
     else
     {
-        [prefs setObject:DirectionWestbound forKey:DirectionUserDefaultKey];
+        int value = [temp[1] intValue];
+        return (value != 0) ? value : [temp[0] intValue];
     }
 }
 
 // Determine the next couple times that a train will be arriving
 - (void) getNextCoupleTimes
 {
+    // Get the current direction value
+    NSString *currentDir = [self.directionSelector titleForSegmentAtIndex:self.directionSelector.selectedSegmentIndex];
+    uint currentDirection = ([currentDir caseInsensitiveCompare:DirectionWestbound] == NSOrderedSame) ? WestboundDirectionID : EastboundDirectionID;
+    [self logDirection];
+    
     // Get array of arrival times
     NSLog(@"Getting arrival times...");
-    StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:self.selectedStation.stopID.intValue];
-    NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:EastboundDirectionID]];
-    //NSArray *arrivalTimes = [[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:self.eastbound?EastboundDirectionID:WestboundDirectionID]];
+    StationTimes *stationTimes = [[StationTimes alloc] initWithStationID:[self getStationIDForDirection:currentDirection]];
+    NSMutableArray *arrivalTimes = [[[NSArray alloc] initWithArray:[stationTimes getTrainArrivalTimesArray:currentDirection]] mutableCopy];
+    
+    // DEBUG: Print contents of array
+    NSLog(@"Printing the arrival times found...");
     for (NSString *str in arrivalTimes)
     {
         NSLog(@"%@", str);
     }
-    NSLog(@"arrivalTimes.count = %lu", (unsigned long)arrivalTimes.count);
+    //NSLog(@"arrivalTimes.count = %lu", (unsigned long)arrivalTimes.count);
     
     // Get current date and time
     NSDate *today = [NSDate date];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm:ss"];    // Get the current time in 24-hour format
-    
-    // Display current time in 12HR/24HR (i.e. 11:25PM or 23:25) is formatted according to User Settings
-    //[dateFormatter setTimeStyle:NSDateFormatterLongStyle];
-    
+    [dateFormatter setDateFormat:@"HH:mm:ss"];    // Capitalized "HH" gets the current time in the 24-hour format that we want here
     NSString *currentTime = [dateFormatter stringFromDate:today];
     NSLog(@"Current Time: %@", currentTime);
     
+    // Compare times
+    
+    // Print the next 4 times
 }
+
+
+// Compare the times 
+
+
 
 @end

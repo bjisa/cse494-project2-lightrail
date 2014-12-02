@@ -51,9 +51,7 @@
                 [self.stationStopDetailsArray addObject:details];
             }
         }
-        
     }
-    
     return self;
 }
 
@@ -64,40 +62,42 @@
     // Collect all arrival times into an array
     NSLog(@"Performing trip analysis");
     NSMutableArray *array = [[NSMutableArray alloc] init];
-    int added = 0;
-    int notadded = 0;
-    TripAnalyzer *analyzer = [[TripAnalyzer alloc] init];
+    //int added = 0;
+    //int notadded = 0;
+    //TripAnalyzer *analyzer = [[TripAnalyzer alloc] init];
     NSString *lastArrivalTime = [NSString new];
     for (StationStopDetails *item in self.stationStopDetailsArray)
     {
+        item.arrival_time = [item.arrival_time stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         if (![item.arrival_time isEqualToString:lastArrivalTime])
         {
-            NSLog(@"Trip ID = %li", item.trip_id);
             lastArrivalTime = item.arrival_time;
-            int directionFound = [analyzer getTripDirection:item.trip_id];
+            [array addObject:item.arrival_time];
             
-            NSLog(@"Trip directionFound = %i, direction wanted = %i", directionFound, direction);
-            if (directionFound == direction)
-            {
-                [array addObject:item.arrival_time];
-                NSLog(@"Arrival Time '%@' added", item.arrival_time);
-                added++;
-            }
-            else
-            {
-                NSLog(@"Arrival Time '%@' NOT added", item.arrival_time);
-                notadded++;
-            }
+//            NSLog(@"Trip ID = %li", item.trip_id);
+//            int directionFound = [analyzer getTripDirection:item.trip_id];
+//            NSLog(@"Trip directionFound = %i, direction wanted = %i", directionFound, direction);
+//            if (directionFound == direction)
+//            {
+//                
+//                NSLog(@"Arrival Time '%@' added", item.arrival_time);
+//                added++;
+//            }
+//            else
+//            {
+//                NSLog(@"Arrival Time '%@' NOT added", item.arrival_time);
+//                notadded++;
+//            }
         }
     }
-    NSLog(@"%i times added, %i times NOT added.", added, notadded);
+    //NSLog(@"%i times added, %i times NOT added.", added, notadded);
     
     // Proceed if we get data in our array
     if (array.count > 0)
     {
         // Fix hours lists that make no sense
         NSLog(@"Fixing hours list");
-        NSLog(@"array.count = %lu", (unsigned long)array.count);
+        //NSLog(@"array.count = %lu", (unsigned long)array.count);
         for (int i = 0; i < array.count; i++)
         {
             NSArray *temp = [NSArray arrayWithArray:[array[i] componentsSeparatedByString:@":"]];
@@ -114,9 +114,9 @@
         
         // Remove duplicate values
         NSLog(@"Removing duplicate values");
-        NSLog(@"array.count = %lu", (unsigned long)array.count);
+        //NSLog(@"array.count = %lu", (unsigned long)array.count);
         NSMutableArray *newArray = [[NSMutableArray alloc] initWithObjects:[array objectAtIndex:0], nil];
-        NSLog(@"Instantiated newArray");
+        //NSLog(@"Instantiated newArray");
         for (int i = 1; i < array.count; i++)
         {
             if (![[array objectAtIndex:i] isEqualToString:[array objectAtIndex:(i-1)]])
@@ -131,7 +131,7 @@
         }
         
         // Return the processed array
-        NSLog(@"Returning the processed array");
+        //NSLog(@"Returning the processed array");
         return [NSArray arrayWithArray:newArray];
     }
     else

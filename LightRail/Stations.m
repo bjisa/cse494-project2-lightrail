@@ -13,21 +13,18 @@
 
 static Stations *theStations = nil;
 
-+(Stations *) sharedStations {
-    
++(Stations *) sharedStations
+{
     if (theStations == nil)
     {
         theStations = [[Stations alloc] init];
     }
-    
     return theStations;
-    
 }
 
--(id) init {
-    
+-(id) init
+{
     self = [super init];
-    
     if (self)
     {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
@@ -40,7 +37,7 @@ static Stations *theStations = nil;
             
             if (![[item stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""])
             {
-                NSLog(@"item = %@", item);
+                //NSLog(@"item = %@", item);
                 NSArray *station = [item componentsSeparatedByString:@","];
                 NSMutableDictionary *stationdict = [NSMutableDictionary new];
                 

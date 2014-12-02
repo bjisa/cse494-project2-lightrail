@@ -14,7 +14,7 @@
 {
     if (self = [super init])
     {
-        self.stopID = dict[@"stop_code"];
+        self.stopID = dict[@"stop_id"];
         self.stopIDEastbound = dict[@"stop_id_east"];
         self.stopIDWestbound = dict[@"stop_id_west"];
         self.name = dict[@"name"];
