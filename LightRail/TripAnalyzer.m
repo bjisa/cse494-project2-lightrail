@@ -33,10 +33,10 @@
         }
         
         // DEBUG STATEMENTS
-        NSLog(@"Inside TripAnalyzer init");
+        //NSLog(@"Inside TripAnalyzer init");
         //NSLog(@"Path: %@", path);
         //NSLog(@"Content:\n%@", content);
-        NSLog(@"self.fileDetails.count = %lu", (unsigned long)self.fileDetails.count);
+        //NSLog(@"self.fileDetails.count = %lu", (unsigned long)self.fileDetails.count);
     }
     return self;
 }
@@ -53,14 +53,14 @@
     }
     
     // Direction was not found
-    NSLog(@"Direction  NOT found, assuming direction = %i", UnknownDirectionID);
+    //NSLog(@"Direction  NOT found, assuming direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 
 
 - (uint) performBinarySearch:(long) tripID
 {
-    NSLog(@"Performing Binary Search, tripID = %li", tripID);
+    //NSLog(@"Performing Binary Search, tripID = %li", tripID);
     
     // Set the initial minValue and maxValue to search entire array
     long minValue = 0;
@@ -79,7 +79,7 @@
         if (tripModel.trip_id == tripID)        // midpoint points to the location of the tripId we wanted
         {
             // Key was found at the array index midpoint, return direction_id
-            NSLog(@"Direction found, returning = %i", tripModel.direction_id);
+            //NSLog(@"Direction found, returning = %i", tripModel.direction_id);
             return tripModel.direction_id;
         }
         else if (tripModel.trip_id < tripID)    // midpoint is too low
@@ -95,14 +95,14 @@
     }
     
     // Direction was not found
-    NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
+    //NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 
 
 - (int) performLinearSearch:(long) tripID
 {
-    NSLog(@"Performing Linear Search, tripID = %li", tripID);
+    //NSLog(@"Performing Linear Search, tripID = %li", tripID);
 
     // Initialize searching parameters
     Boolean found = false;
@@ -125,12 +125,12 @@
     
     if (found)
     {
-        NSLog(@"Direction found, returning = %i", tripModel.direction_id);
+        //NSLog(@"Direction found, returning = %i", tripModel.direction_id);
         return tripModel.direction_id;
     }
     
     // Direction was not found
-    NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
+    //NSLog(@"Direction NOT found, returning direction = %i", UnknownDirectionID);
     return UnknownDirectionID;
 }
 

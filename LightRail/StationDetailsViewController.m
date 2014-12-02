@@ -218,6 +218,7 @@ int const TrainTimeEqualToCurrentTime = 0;
 
 - (NSString *) formatTimeString:(NSString *)str
 {
+    // Determine if the user wants a 12 hour clock or a 24 hour clock
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setLocale:[NSLocale currentLocale]];
     [formatter setDateStyle:NSDateFormatterNoStyle];
@@ -226,8 +227,9 @@ int const TrainTimeEqualToCurrentTime = 0;
     NSRange amRange = [dateString rangeOfString:[formatter AMSymbol]];
     NSRange pmRange = [dateString rangeOfString:[formatter PMSymbol]];
     Boolean is24hour = (amRange.location == NSNotFound && pmRange.location == NSNotFound);
-    NSLog(@"User wants a 24 hour clock? %@",(is24hour ? @"YES" : @"NO"));
+    //NSLog(@"User wants a 24 hour clock? %@",(is24hour ? @"YES" : @"NO"));
     
+    // Return the correct time style
     if (is24hour)
     {
         return str;
