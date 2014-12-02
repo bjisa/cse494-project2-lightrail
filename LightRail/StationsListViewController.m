@@ -38,6 +38,8 @@
     
     Stations *stations = [Stations sharedStations];
     destination.selectedStation = stations.stationlist[self.selectedIndexPathRow];
+    
+    NSLog(@"destination.selectedStation = %@", destination.selectedStation.stopID);
 }
 
 /*
