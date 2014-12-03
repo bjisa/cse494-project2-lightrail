@@ -11,6 +11,8 @@
 
 @interface Stations : NSObject
 @property (nonatomic, strong) NSMutableArray *stationlist;
+@property NSString *currentStation;
+@property NSString *currentTime;
 
 + (Stations*) sharedStations;
 + (StationModel *) getStation:(NSString *)stop_id;

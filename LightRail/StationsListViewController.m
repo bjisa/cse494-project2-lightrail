@@ -70,9 +70,4 @@
     self.selectedIndexPathRow = indexPath.row;
 }
 
-- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    self.selectedIndexPathRow = indexPath.row;
-}
-
 @end

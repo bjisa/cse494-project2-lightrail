@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		954238E01A2FAF9600E920B4 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 954238DF1A2FAF9600E920B4 /* Trip.m */; };
+		954238E51A2FB50500E920B4 /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954238E41A2FB50500E920B4 /* StatusViewController.m */; };
 		959421CC1A1D36C100715E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CB1A1D36C100715E6D /* main.m */; };
 		959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CE1A1D36C100715E6D /* AppDelegate.m */; };
 		959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D11A1D36C100715E6D /* FavoritesViewController.m */; };
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		954238DE1A2FAF9600E920B4 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		954238DF1A2FAF9600E920B4 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		954238E31A2FB50500E920B4 /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		954238E41A2FB50500E920B4 /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
 		959421C61A1D36C100715E6D /* LightRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959421CA1A1D36C100715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959421CB1A1D36C100715E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		954238E21A2FAFAD00E920B4 /* Trip Model */ = {
+			isa = PBXGroup;
+			children = (
+				954238DE1A2FAF9600E920B4 /* Trip.h */,
+				954238DF1A2FAF9600E920B4 /* Trip.m */,
+			);
+			name = "Trip Model";
+			sourceTree = "<group>";
+		};
+		954238E61A2FB50900E920B4 /* Status View */ = {
+			isa = PBXGroup;
+			children = (
+				954238E31A2FB50500E920B4 /* StatusViewController.h */,
+				954238E41A2FB50500E920B4 /* StatusViewController.m */,
+			);
+			name = "Status View";
+			sourceTree = "<group>";
+		};
 		959421BD1A1D36C100715E6D = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +152,7 @@
 			children = (
 				E58E1D3E1A2EA0E100100694 /* Constants */,
 				E58E1D441A2EA3B400100694 /* View Controllers */,
-				E588CABD1A2279EB00186E93 /* Station Information Models */,
+				E588CABD1A2279EB00186E93 /* Models */,
 				E58E1D3F1A2EA1E300100694 /* CHCSV Parser */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
@@ -172,15 +196,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E588CABD1A2279EB00186E93 /* Station Information Models */ = {
+		E588CABD1A2279EB00186E93 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				954238E21A2FAFAD00E920B4 /* Trip Model */,
 				E58E1D401A2EA21000100694 /* StationModel */,
 				E588CAC91A228C2D00186E93 /* Stations */,
 				E588CAC81A228C2400186E93 /* StationTimes */,
 				E588CAC71A2284F400186E93 /* StationStopDetailsModel */,
 			);
-			name = "Station Information Models";
+			name = Models;
 			sourceTree = "<group>";
 		};
 		E588CABE1A2279FE00186E93 /* Station List View */ = {
@@ -281,6 +306,7 @@
 				E58E1D421A2EA39000100694 /* Second View */,
 				E58E1D431A2EA39B00100694 /* Station Time Table View */,
 				E58E1D481A2EA40700100694 /* Station Details View */,
+				954238E61A2FB50900E920B4 /* Status View */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -428,10 +454,12 @@
 				E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */,
 				E1A72B4C1A2BA9CC00370FBD /* StationTimeTableViewController.m in Sources */,
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
+				954238E51A2FB50500E920B4 /* StatusViewController.m in Sources */,
 				E58E1D4B1A2EA54400100694 /* TripModel.m in Sources */,
 				E588CAC61A22818C00186E93 /* StationStopDetails.m in Sources */,
 				E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */,
 				95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */,
+				954238E01A2FAF9600E920B4 /* Trip.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */,
 				959421F41A1D416A00715E6D /* StationsListViewController.m in Sources */,

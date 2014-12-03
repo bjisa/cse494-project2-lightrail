@@ -10,14 +10,17 @@
 #import "Constants.h"
 #import "MBProgressHUD.h"
 #import "StationTimes.h"
+#import "Stations.h"
 
 @interface StationDetailsViewController ()
 
 @property (nonatomic) Boolean eastbound;
 @property Boolean firstLoad;
 @property NSMutableArray *favoriteStations;
+@property NSString *nextTime;
 
 - (IBAction)addToFavorites:(id)sender;
+- (IBAction)boardNext:(id)sender;
 
 @end
 
@@ -134,6 +137,8 @@ int const TrainTimeEqualToCurrentTime = 0;
     }
     i++;
     i++;
+    
+    self.nextTime = arrivalTimes[i % arrivalTimes.count];
     
     // Format and print the next 4 times into the data labels
     self.time1Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
@@ -409,6 +414,12 @@ int const TrainTimeEqualToCurrentTime = 0;
         [self.addToFavoritesButton setTitle:@"Add To Favorites" forState:UIControlStateNormal];
         [self.addToFavoritesButton setBackgroundColor:[UIColor greenColor]];
     }
+}
+
+- (IBAction)boardNext:(id)sender {
+    Stations *stations = [Stations sharedStations];
+    stations.currentStation = self.selectedStation.stopID;
+    stations.currentTime = self.nextTime;
 }
 
 #pragma mark - NSCoding
