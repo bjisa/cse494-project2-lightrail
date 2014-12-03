@@ -24,6 +24,11 @@
 		E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = E588CAC01A227D2B00186E93 /* StationTimes.m */; };
 		E588CAC31A22801C00186E93 /* stop_times.txt in Resources */ = {isa = PBXBuildFile; fileRef = E588CAC21A22801C00186E93 /* stop_times.txt */; };
 		E588CAC61A22818C00186E93 /* StationStopDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E588CAC51A22818C00186E93 /* StationStopDetails.m */; };
+		E58E1D3D1A2EA0DB00100694 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E1D3C1A2EA0DB00100694 /* Constants.m */; };
+		E58E1D471A2EA40200100694 /* StationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E1D461A2EA40200100694 /* StationDetailsViewController.m */; };
+		E58E1D4B1A2EA54400100694 /* TripModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E1D4A1A2EA54400100694 /* TripModel.m */; };
+		E58E1D501A2EA56D00100694 /* TripAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = E58E1D4F1A2EA56D00100694 /* TripAnalyzer.m */; };
+		E58E1D531A2EA76F00100694 /* trips.txt in Resources */ = {isa = PBXBuildFile; fileRef = E58E1D521A2EA76F00100694 /* trips.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +73,15 @@
 		E588CAC21A22801C00186E93 /* stop_times.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = stop_times.txt; path = transit_data/stop_times.txt; sourceTree = SOURCE_ROOT; };
 		E588CAC41A22818C00186E93 /* StationStopDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationStopDetails.h; sourceTree = "<group>"; };
 		E588CAC51A22818C00186E93 /* StationStopDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationStopDetails.m; sourceTree = "<group>"; };
+		E58E1D3B1A2EA0DB00100694 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E58E1D3C1A2EA0DB00100694 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		E58E1D451A2EA40200100694 /* StationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationDetailsViewController.h; sourceTree = "<group>"; };
+		E58E1D461A2EA40200100694 /* StationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationDetailsViewController.m; sourceTree = "<group>"; };
+		E58E1D491A2EA54400100694 /* TripModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripModel.h; sourceTree = "<group>"; };
+		E58E1D4A1A2EA54400100694 /* TripModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripModel.m; sourceTree = "<group>"; };
+		E58E1D4E1A2EA56D00100694 /* TripAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripAnalyzer.h; sourceTree = "<group>"; };
+		E58E1D4F1A2EA56D00100694 /* TripAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripAnalyzer.m; sourceTree = "<group>"; };
+		E58E1D521A2EA76F00100694 /* trips.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,24 +123,17 @@
 		959421C81A1D36C100715E6D /* LightRail */ = {
 			isa = PBXGroup;
 			children = (
-				E588CABE1A2279FE00186E93 /* StationListViewController */,
-				E588CABD1A2279EB00186E93 /* StationInformation */,
-				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
-				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
+				E58E1D3E1A2EA0E100100694 /* Constants */,
+				E58E1D441A2EA3B400100694 /* View Controllers */,
+				E588CABD1A2279EB00186E93 /* Station Information Models */,
+				E58E1D3F1A2EA1E300100694 /* CHCSV Parser */,
 				959421CD1A1D36C100715E6D /* AppDelegate.h */,
 				959421CE1A1D36C100715E6D /* AppDelegate.m */,
-				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
-				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
-				959421D01A1D36C100715E6D /* FavoritesViewController.h */,
-				959421D11A1D36C100715E6D /* FavoritesViewController.m */,
-				959421D31A1D36C100715E6D /* SecondViewController.h */,
-				959421D41A1D36C100715E6D /* SecondViewController.m */,
 				959421D61A1D36C200715E6D /* Main.storyboard */,
-				E1A72B4A1A2BA9CC00370FBD /* StationTimeTableViewController.h */,
-				E1A72B4B1A2BA9CC00370FBD /* StationTimeTableViewController.m */,
 				959421D91A1D36C200715E6D /* Images.xcassets */,
 				959421DB1A1D36C200715E6D /* LaunchScreen.xib */,
 				959421C91A1D36C100715E6D /* Supporting Files */,
+				E58E1D4C1A2EA54900100694 /* Trip Analysis Models */,
 			);
 			path = LightRail;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				E588CAC21A22801C00186E93 /* stop_times.txt */,
+				E58E1D521A2EA76F00100694 /* trips.txt */,
 				95EA42A71A1D43C100C8CECB /* stops.txt */,
 				959421CA1A1D36C100715E6D /* Info.plist */,
 				959421CB1A1D36C100715E6D /* main.m */,
@@ -159,23 +167,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E588CABD1A2279EB00186E93 /* StationInformation */ = {
+		E588CABD1A2279EB00186E93 /* Station Information Models */ = {
 			isa = PBXGroup;
 			children = (
+				E58E1D401A2EA21000100694 /* StationModel */,
 				E588CAC91A228C2D00186E93 /* Stations */,
 				E588CAC81A228C2400186E93 /* StationTimes */,
 				E588CAC71A2284F400186E93 /* StationStopDetailsModel */,
 			);
-			name = StationInformation;
+			name = "Station Information Models";
 			sourceTree = "<group>";
 		};
-		E588CABE1A2279FE00186E93 /* StationListViewController */ = {
+		E588CABE1A2279FE00186E93 /* Station List View */ = {
 			isa = PBXGroup;
 			children = (
 				959421F21A1D416A00715E6D /* StationsListViewController.h */,
 				959421F31A1D416A00715E6D /* StationsListViewController.m */,
 			);
-			name = StationListViewController;
+			name = "Station List View";
 			sourceTree = "<group>";
 		};
 		E588CAC71A2284F400186E93 /* StationStopDetailsModel */ = {
@@ -203,6 +212,108 @@
 				95E5D8881A1D5FCA00F017C8 /* Stations.m */,
 			);
 			name = Stations;
+			sourceTree = "<group>";
+		};
+		E58E1D3E1A2EA0E100100694 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E58E1D3B1A2EA0DB00100694 /* Constants.h */,
+				E58E1D3C1A2EA0DB00100694 /* Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		E58E1D3F1A2EA1E300100694 /* CHCSV Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */,
+				E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */,
+			);
+			name = "CHCSV Parser";
+			sourceTree = "<group>";
+		};
+		E58E1D401A2EA21000100694 /* StationModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */,
+				E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */,
+			);
+			name = StationModel;
+			sourceTree = "<group>";
+		};
+		E58E1D411A2EA37200100694 /* Favorite Stations View */ = {
+			isa = PBXGroup;
+			children = (
+				959421D01A1D36C100715E6D /* FavoritesViewController.h */,
+				959421D11A1D36C100715E6D /* FavoritesViewController.m */,
+			);
+			name = "Favorite Stations View";
+			sourceTree = "<group>";
+		};
+		E58E1D421A2EA39000100694 /* Second View */ = {
+			isa = PBXGroup;
+			children = (
+				959421D31A1D36C100715E6D /* SecondViewController.h */,
+				959421D41A1D36C100715E6D /* SecondViewController.m */,
+			);
+			name = "Second View";
+			sourceTree = "<group>";
+		};
+		E58E1D431A2EA39B00100694 /* Station Time Table View */ = {
+			isa = PBXGroup;
+			children = (
+				E1A72B4A1A2BA9CC00370FBD /* StationTimeTableViewController.h */,
+				E1A72B4B1A2BA9CC00370FBD /* StationTimeTableViewController.m */,
+			);
+			name = "Station Time Table View";
+			sourceTree = "<group>";
+		};
+		E58E1D441A2EA3B400100694 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E588CABE1A2279FE00186E93 /* Station List View */,
+				E58E1D411A2EA37200100694 /* Favorite Stations View */,
+				E58E1D421A2EA39000100694 /* Second View */,
+				E58E1D431A2EA39B00100694 /* Station Time Table View */,
+				E58E1D481A2EA40700100694 /* Station Details View */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E58E1D481A2EA40700100694 /* Station Details View */ = {
+			isa = PBXGroup;
+			children = (
+				E58E1D451A2EA40200100694 /* StationDetailsViewController.h */,
+				E58E1D461A2EA40200100694 /* StationDetailsViewController.m */,
+			);
+			name = "Station Details View";
+			sourceTree = "<group>";
+		};
+		E58E1D4C1A2EA54900100694 /* Trip Analysis Models */ = {
+			isa = PBXGroup;
+			children = (
+				E58E1D4D1A2EA55B00100694 /* TripModel */,
+				E58E1D511A2EA57200100694 /* TripAnalyzer */,
+			);
+			name = "Trip Analysis Models";
+			sourceTree = "<group>";
+		};
+		E58E1D4D1A2EA55B00100694 /* TripModel */ = {
+			isa = PBXGroup;
+			children = (
+				E58E1D491A2EA54400100694 /* TripModel.h */,
+				E58E1D4A1A2EA54400100694 /* TripModel.m */,
+			);
+			name = TripModel;
+			sourceTree = "<group>";
+		};
+		E58E1D511A2EA57200100694 /* TripAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				E58E1D4E1A2EA56D00100694 /* TripAnalyzer.h */,
+				E58E1D4F1A2EA56D00100694 /* TripAnalyzer.m */,
+			);
+			name = TripAnalyzer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +401,7 @@
 				E588CAC31A22801C00186E93 /* stop_times.txt in Resources */,
 				959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */,
 				959421DA1A1D36C200715E6D /* Images.xcassets in Resources */,
+				E58E1D531A2EA76F00100694 /* trips.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,17 +419,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58E1D471A2EA40200100694 /* StationDetailsViewController.m in Sources */,
 				E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */,
 				E1A72B4C1A2BA9CC00370FBD /* StationTimeTableViewController.m in Sources */,
 				959421D51A1D36C100715E6D /* SecondViewController.m in Sources */,
+				E58E1D4B1A2EA54400100694 /* TripModel.m in Sources */,
 				E588CAC61A22818C00186E93 /* StationStopDetails.m in Sources */,
 				E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */,
 				95E5D8891A1D5FCA00F017C8 /* Stations.m in Sources */,
 				959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */,
 				959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */,
 				959421F41A1D416A00715E6D /* StationsListViewController.m in Sources */,
+				E58E1D501A2EA56D00100694 /* TripAnalyzer.m in Sources */,
 				E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */,
 				959421CC1A1D36C100715E6D /* main.m in Sources */,
+				E58E1D3D1A2EA0DB00100694 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +556,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LightRail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -450,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LightRail/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -13,44 +13,49 @@
 
 static Stations *theStations = nil;
 
-+(Stations *) sharedStations {
-    
-    if (theStations == nil) {
++(Stations *) sharedStations
+{
+    if (theStations == nil)
+    {
         theStations = [[Stations alloc] init];
     }
-    
     return theStations;
-    
 }
 
--(id) init {
-    
+-(id) init
+{
     self = [super init];
-    
-    if (self) {
+    if (self)
+    {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
         NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
         
         NSArray *items = [content componentsSeparatedByString:@"\n"];
         self.stationlist = [NSMutableArray new];
         
-        for (NSString *item in items) {
+        for (NSString *item in items)
+        {
             
-            NSArray *station = [item componentsSeparatedByString:@","];
-            NSMutableDictionary *stationdict = [NSMutableDictionary new];
-            
-            [stationdict setObject:station[0] forKey:@"stop_id"];
-            [stationdict setObject:station[2] forKey:@"name"];
-            [stationdict setObject:station[4] forKey:@"latitude"];
-            [stationdict setObject:station[5] forKey:@"longitude"];
-            
-            StationModel * newStation = [[StationModel alloc] initWithCSVDictionary:stationdict];
-            [self.stationlist addObject:newStation];
+            if (!([[item stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                   isEqualToString:@""] ||
+                  [[item stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+                   isEqualToString:@"stop_id_west,stop_id_east,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,wheelchair_boarding"]))
+            {
+                //NSLog(@"item = %@", item);
+                NSArray *station = [item componentsSeparatedByString:@","];
+                NSMutableDictionary *stationdict = [NSMutableDictionary new];
+                
+                [stationdict setObject:station[2] forKey:@"stop_id"];
+                [stationdict setObject:station[3] forKey:@"name"];
+                [stationdict setObject:station[5] forKey:@"latitude"];
+                [stationdict setObject:station[6] forKey:@"longitude"];
+                
+                StationModel * newStation = [[StationModel alloc] initWithCSVDictionary:stationdict];
+                [self.stationlist addObject:newStation];
+            }
         }
     }
-    
     return self;
-    
 }
 
 @end

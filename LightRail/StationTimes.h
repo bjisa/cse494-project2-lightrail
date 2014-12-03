@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "StationStopDetails.h"
+#import "TripAnalyzer.h"
 
 @interface StationTimes : NSObject
 
@@ -20,10 +21,10 @@
 - (id) initWithStationID:(long)stationID;
 
 // Get an array of arrival times for a station
-- (NSArray *) getTrainArrivalTimesArray;
+- (NSArray *) getTrainArrivalTimesArray: (int) direction;
 
 // Get an array of departure times for a station
-- (NSArray *) getTrainDepartureTimesArray;
+- (NSArray *) getTrainDepartureTimesArray: (int) direction;
 
 
 @end
