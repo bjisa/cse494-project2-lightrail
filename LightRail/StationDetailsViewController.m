@@ -8,12 +8,16 @@
 
 #import "StationDetailsViewController.h"
 #import "Constants.h"
+#import "MBProgressHUD.h"
 #import "StationTimes.h"
 
 @interface StationDetailsViewController ()
 
 @property (nonatomic) Boolean eastbound;
 @property Boolean firstLoad;
+@property NSMutableArray *favoriteStations;
+
+- (IBAction)addToFavorites:(id)sender;
 
 @end
 
@@ -43,8 +47,15 @@ int const TrainTimeEqualToCurrentTime = 0;
     
     // Get the next couple of times
     [self getNextCoupleTimes];
+    
+    // Fill favorite stations array
+    self.favoriteStations = [[NSMutableArray alloc] init];
+    [self loadChecklistItems];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self saveChecklistItems];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -295,5 +306,62 @@ int const TrainTimeEqualToCurrentTime = 0;
     return @"STUB";
 }
 
+
+- (IBAction)addToFavorites:(id)sender {
+    [self.favoriteStations addObject:self.selectedStation.stopID];
+    NSLog(@"%@\n", self.favoriteStations);
+     
+    // Show message that station was saved to favorites.
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+     
+    // Configure for text only and offset down
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = @"Saved to Favorites";
+    hud.margin = 10.f;
+    hud.yOffset = 150.f;
+    hud.removeFromSuperViewOnHide = YES;
+     
+    [hud hide:YES afterDelay:1];
+}
+
+#pragma mark - NSCoding
+
+- (NSString *)documentsDirectory
+{
+    return [@"~/Documents" stringByExpandingTildeInPath];
+}
+
+- (NSString *)dataFilePath
+{
+    NSLog(@"%@",[self documentsDirectory]);
+    return [[self documentsDirectory] stringByAppendingPathComponent:@"Favorites.plist"];
+    
+}
+
+- (void)saveChecklistItems
+{
+    NSMutableData *data = [[NSMutableData alloc] init];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    
+    [archiver encodeObject:self.favoriteStations forKey:@"favorites"];
+    
+    [archiver finishEncoding];
+    
+    [data writeToFile:[self dataFilePath] atomically:YES];
+}
+
+- (void)loadChecklistItems
+{
+    NSString *path = [self dataFilePath];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+        NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+        
+        self.favoriteStations = [unarchiver decodeObjectForKey:@"favorites"];
+        
+        [unarchiver finishDecoding];
+    }
+}
 
 @end

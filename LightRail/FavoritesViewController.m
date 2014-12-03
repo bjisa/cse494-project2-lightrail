@@ -10,7 +10,7 @@
 
 @interface FavoritesViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property NSMutableArray *favorites;
+@property NSMutableArray *favoriteStations;
 
 @end
 
@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.favorites = [[NSMutableArray alloc] init];
+    self.favoriteStations = [[NSMutableArray alloc] init];
     [self loadChecklistItems];
 }
 
@@ -36,14 +36,15 @@
 #pragma mark - TableViewDelegation
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-     return self.favorites.count;
+     return self.favoriteStations.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    StationModel *station = self.favorites[indexPath.row];
-    cell.textLabel.text = station.name;
+    //StationModel *station = self.favoriteStations[indexPath.row];
+    NSString *stopID = self.favoriteStations[indexPath.row];
+    cell.textLabel.text = stopID;
 
     return cell;
 }
@@ -67,7 +68,7 @@
     NSMutableData *data = [[NSMutableData alloc] init];
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     
-    [archiver encodeObject:self.favorites forKey:@"favorites"];
+    [archiver encodeObject:self.favoriteStations forKey:@"favorites"];
     
     [archiver finishEncoding];
     
@@ -82,7 +83,7 @@
         NSData *data = [[NSData alloc] initWithContentsOfFile:path];
         NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
         
-        self.favorites = [unarchiver decodeObjectForKey:@"favorites"];
+        self.favoriteStations = [unarchiver decodeObjectForKey:@"favorites"];
         
         [unarchiver finishDecoding];
     }
