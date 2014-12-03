@@ -306,22 +306,44 @@ int const TrainTimeEqualToCurrentTime = 0;
     return @"STUB";
 }
 
+- (BOOL)isStationIDInFavorites:(NSString *)stop_id {
+    for (NSString *stopID in self.favoriteStations) {
+        if ([stopID isEqualToString:stop_id]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 
 - (IBAction)addToFavorites:(id)sender {
-    [self.favoriteStations addObject:self.selectedStation.stopID];
-    NSLog(@"%@\n", self.favoriteStations);
+    if (![self isStationIDInFavorites:self.selectedStation.stopID]) {
+        [self.favoriteStations addObject:self.selectedStation.stopID];
+        NSLog(@"%@\n", self.favoriteStations);
      
-    // Show message that station was saved to favorites.
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        // Show message that station was saved to favorites.
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
      
-    // Configure for text only and offset down
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = @"Saved to Favorites";
-    hud.margin = 10.f;
-    hud.yOffset = 150.f;
-    hud.removeFromSuperViewOnHide = YES;
+        // Configure for text only and offset down
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"Saved to Favorites";
+        hud.margin = 10.f;
+        hud.yOffset = 150.f;
+        hud.removeFromSuperViewOnHide = YES;
      
-    [hud hide:YES afterDelay:1];
+        [hud hide:YES afterDelay:1];
+    } else {
+        // Show message that station is already in favorites.
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+        
+        // Configure for text only and offset down
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = @"Already in Favorites";
+        hud.margin = 10.f;
+        hud.yOffset = 150.f;
+        hud.removeFromSuperViewOnHide = YES;
+        
+        [hud hide:YES afterDelay:1];
+    }
 }
 
 #pragma mark - NSCoding
