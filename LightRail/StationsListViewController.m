@@ -37,9 +37,7 @@
     Stations *stations = [Stations sharedStations];
     StationDetailsViewController *destination = segue.destinationViewController;
     destination.selectedStation = stations.stationlist[self.selectedIndexPathRow % stations.stationlist.count];
-    
-    NSLog(@"self.selectedIndexPathRow = %li", (long)self.selectedIndexPathRow);
-    NSLog(@"destination.selectedStation.stopID = %@", destination.selectedStation.stopID);
+
 }
 
 /*
@@ -61,13 +59,15 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Stations *stations = [Stations sharedStations];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
     StationModel *station = stations.stationlist[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text = station.name;
-    
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.selectedIndexPathRow = indexPath.row;
 }
 
 - (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
