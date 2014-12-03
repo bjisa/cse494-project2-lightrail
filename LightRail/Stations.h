@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StationModel.h"
 
 @interface Stations : NSObject
 @property (nonatomic, strong) NSMutableArray *stationlist;
 
 + (Stations*) sharedStations;
++ (StationModel *) getStation:(NSString *)stop_id;
 
 @end

@@ -58,4 +58,14 @@ static Stations *theStations = nil;
     return self;
 }
 
++ (StationModel *)getStation:(NSString *)stop_id {
+    Stations *stations = [Stations sharedStations];
+    for (StationModel *station in stations.stationlist) {
+        if ([station.stopID isEqualToString:stop_id]){
+            return station;
+        }
+    }
+    return nil;
+}
+
 @end
