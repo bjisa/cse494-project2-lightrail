@@ -27,4 +27,6 @@
 
 @property StationModel *selectedStation;
 
+@property (strong, nonatomic) IBOutlet UIButton *addToFavoritesButton;
+
 @end

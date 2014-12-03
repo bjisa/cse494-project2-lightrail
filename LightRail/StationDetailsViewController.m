@@ -53,7 +53,8 @@ int const TrainTimeEqualToCurrentTime = 0;
     [self loadChecklistItems];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated
+{
     [self saveChecklistItems];
 }
 
@@ -315,8 +316,10 @@ int const TrainTimeEqualToCurrentTime = 0;
     return NO;
 }
 
-- (IBAction)addToFavorites:(id)sender {
-    if (![self isStationIDInFavorites:self.selectedStation.stopID]) {
+- (IBAction)addToFavorites:(id)sender
+{
+    if (![self isStationIDInFavorites:self.selectedStation.stopID])
+    {
         [self.favoriteStations addObject:self.selectedStation.stopID];
         NSLog(@"%@\n", self.favoriteStations);
      
@@ -331,7 +334,9 @@ int const TrainTimeEqualToCurrentTime = 0;
         hud.removeFromSuperViewOnHide = YES;
      
         [hud hide:YES afterDelay:1];
-    } else {
+    }
+    else
+    {
         // Show message that station is already in favorites.
         MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
         

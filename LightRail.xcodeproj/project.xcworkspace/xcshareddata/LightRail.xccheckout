@@ -10,27 +10,29 @@
 	<string>LightRail</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff</key>
+		<string>https://github.com/bjisa/cse494-project2-lightrail</string>
 		<key>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff++505</key>
 		<string>https://github.com/bjisa/cse494-project2-lightrail/trunk</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>LightRail.xcodeproj</string>
+	<string>trunk/LightRail.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff</key>
+		<string>../../..</string>
 		<key>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff++505</key>
-		<string>../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectRepositoryRootDictionary</key>
 	<dict>
 		<key>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff++505</key>
 		<string>https://github.com/bjisa/cse494-project2-lightrail</string>
 	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/bjisa/cse494-project2-lightrail/trunk/LightRail.xcodeproj</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff++505</string>
+	<string>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -38,6 +40,14 @@
 			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4ee4e572-6eb8-01a2-ce4c-ce57b7db7bff</string>
 			<key>IDESourceControlWCCName</key>
 			<string>cse494-project2-lightrail</string>
 		</dict>
