@@ -51,6 +51,13 @@ int const TrainTimeEqualToCurrentTime = 0;
     // Fill favorite stations array
     self.favoriteStations = [[NSMutableArray alloc] init];
     [self loadChecklistItems];
+    
+    // Detect if the station is a favorite station
+    Boolean inFavorites = [self isStationIDInFavorites:self.selectedStation.stopID];
+    NSLog(@"viewDidLoad inFavorites = %@", (inFavorites ? @"true" : @"false"));
+    
+    // Update the click button
+    [self changeButtonView:inFavorites];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -156,12 +163,11 @@ int const TrainTimeEqualToCurrentTime = 0;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
     NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSMutableArray *stopArray = [NSMutableArray arrayWithArray:[content componentsSeparatedByString:@"\n"]];
-    if ([[stopArray[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
-        isEqualToString:@"stop_id_west,stop_id_east,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,wheelchair_boarding"])
-    {
-        [stopArray removeObject:0];
-    }
-    NSLog(@"StopString = %@", stopArray[self.selectedStation.stopID.intValue - 10001]);
+    //    if ([[stopArray[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
+    //        isEqualToString:@"stop_id_west,stop_id_east,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,wheelchair_boarding"])
+    //    {
+    //        [stopArray removeObject:0];
+    //    }
     
     NSArray *temp = [stopArray[self.selectedStation.stopID.intValue - 10001] componentsSeparatedByString:@","];
     if (direction == EastboundDirectionID)
@@ -303,51 +309,105 @@ int const TrainTimeEqualToCurrentTime = 0;
             return [NSString stringWithFormat:@"%i:%02i:%02i AM", hour, minute, second];
         }
     }
-    
-    return @"STUB";
 }
 
-- (BOOL)isStationIDInFavorites:(NSString *)stop_id {
-    for (NSString *stopID in self.favoriteStations) {
-        if ([stopID isEqualToString:stop_id]) {
+- (BOOL)isStationIDInFavorites:(NSString *)stop_id
+{
+    for (NSString *stopID in self.favoriteStations)
+    {
+        if ([stopID isEqualToString:stop_id])
+        {
             return YES;
         }
     }
     return NO;
 }
 
+// Callback invoked when the user clicks "Add To Favorites" / "Remove From Favorites" button
 - (IBAction)addToFavorites:(id)sender
 {
-    if (![self isStationIDInFavorites:self.selectedStation.stopID])
+    // Add/Remove the station to/from favorites
+    [self addOrRemoveStationFromFavorites:self.selectedStation.stopID flipDirections:true];
+}
+
+
+// Add or remove a station with a known StopID from favorites
+- (Boolean) addOrRemoveStationFromFavorites:(NSString *)stationStopID flipDirections:(Boolean) flip
+{
+    @try
     {
-        [self.favoriteStations addObject:self.selectedStation.stopID];
-        NSLog(@"%@\n", self.favoriteStations);
-     
-        // Show message that station was saved to favorites.
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-     
-        // Configure for text only and offset down
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"Saved to Favorites";
-        hud.margin = 10.f;
-        hud.yOffset = 150.f;
-        hud.removeFromSuperViewOnHide = YES;
-     
-        [hud hide:YES afterDelay:1];
+        // Case 1: Station ID is currently in favorites and needs to be removed
+        Boolean inFavorites = [self isStationIDInFavorites:stationStopID];
+        if (inFavorites)
+        {
+            if (flip)
+            {
+                // Remove the station from the list of favorites
+                [self.favoriteStations removeObject:stationStopID];
+                NSLog(@"%@\n", self.favoriteStations);
+                
+                // Show message that station was saved to favorites
+                [self displayFavoritesPopup:@"Removed From Favorites"];
+            }
+        }
+        // Case 2: Station ID is not currently in the favorites and needs to be added
+        else
+        {
+            if (flip)
+            {
+                // Add the station to the list of favorites
+                [self.favoriteStations addObject:stationStopID];
+                NSLog(@"%@\n", self.favoriteStations);
+                
+                // Show message that station was saved to favorites
+                [self displayFavoritesPopup:@"Added to Favorites"];
+            }
+        }
+        
+        // Change the button text and background color
+        [self changeButtonView:!inFavorites];
+    }
+    @catch (NSException *exception)
+    {
+        return false;
+    }
+    @finally
+    {
+        return true;
+    }
+}
+
+// Show "In Favorites" popup
+- (void) displayFavoritesPopup:(NSString *)message
+{
+    // Show message that station was saved to favorites
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    
+    // Configure for text only and offset down
+    hud.mode = MBProgressHUDModeText;
+    hud.labelText = message;
+    hud.margin = 10.f;
+    hud.yOffset = 150.f;
+    hud.removeFromSuperViewOnHide = YES;
+    
+    // Remove the message after a 1 second delay
+    [hud hide:YES afterDelay:1];
+}
+
+// Modify the text of the button to adjust "Add to Favorites" / "Remove From Favorites"
+- (void) changeButtonView:(Boolean)inFavorites
+{
+    NSLog(@"ChangeButtonView inFavorites = %@", (inFavorites ? @"true" : @"false"));
+    
+    if (inFavorites)
+    {
+        [self.addToFavoritesButton setTitle:@"Remove From Favorites" forState:UIControlStateNormal];
+        [self.addToFavoritesButton setBackgroundColor:[UIColor redColor]];
     }
     else
     {
-        // Show message that station is already in favorites.
-        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
-        
-        // Configure for text only and offset down
-        hud.mode = MBProgressHUDModeText;
-        hud.labelText = @"Already in Favorites";
-        hud.margin = 10.f;
-        hud.yOffset = 150.f;
-        hud.removeFromSuperViewOnHide = YES;
-        
-        [hud hide:YES afterDelay:1];
+        [self.addToFavoritesButton setTitle:@"Add To Favorites" forState:UIControlStateNormal];
+        [self.addToFavoritesButton setBackgroundColor:[UIColor greenColor]];
     }
 }
 
@@ -360,9 +420,8 @@ int const TrainTimeEqualToCurrentTime = 0;
 
 - (NSString *)dataFilePath
 {
-    NSLog(@"%@",[self documentsDirectory]);
+    //NSLog(@"%@",[self documentsDirectory]);
     return [[self documentsDirectory] stringByAppendingPathComponent:@"Favorites.plist"];
-    
 }
 
 - (void)saveChecklistItems
@@ -371,7 +430,6 @@ int const TrainTimeEqualToCurrentTime = 0;
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     
     [archiver encodeObject:self.favoriteStations forKey:@"favorites"];
-    
     [archiver finishEncoding];
     
     [data writeToFile:[self dataFilePath] atomically:YES];
@@ -381,7 +439,8 @@ int const TrainTimeEqualToCurrentTime = 0;
 {
     NSString *path = [self dataFilePath];
     
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
         NSData *data = [[NSData alloc] initWithContentsOfFile:path];
         NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
         

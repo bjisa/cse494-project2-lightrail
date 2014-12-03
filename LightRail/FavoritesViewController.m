@@ -89,13 +89,15 @@
     return cell;
 }
 
-- (void)addMessageForEmptyTable {
+- (void)addMessageForEmptyTable
+{
     // http://www.appcoda.com/pull-to-refresh-uitableview-empty/
-    if (self.favoriteStations.count == 0) {
+    if (self.favoriteStations.count == 0)
+    {
         // Display a message when the table is empty
         UILabel *messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
  
-        messageLabel.text = @"You have no saved flights.";
+        messageLabel.text = @"You have no favorite stations.";
         messageLabel.textColor = [UIColor blackColor];
         messageLabel.numberOfLines = 0;
         messageLabel.textAlignment = NSTextAlignmentCenter;
@@ -103,7 +105,9 @@
  
         self.tableView.backgroundView = messageLabel;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    } else {
+    }
+    else
+    {
         self.tableView.backgroundView.hidden = YES;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
