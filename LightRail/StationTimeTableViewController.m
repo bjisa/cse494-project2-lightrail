@@ -29,7 +29,29 @@
     NSString *time = self.times[indexPath.row];
     cell.textLabel.text = time;
     
+    cell.imageView.image = [UIImage imageNamed:@"Favorited"];
+    
     return cell;
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        // Remove the deleted object from your data source
+        
+        // If your data source is an NSMutableArray, do this
+        //[self.dataArray removeObjectAtIndex:indexPath.row];
+        
+        // Refresh the data table
+        [tableView reloadData];
+    }
+}
+
 
 @end
