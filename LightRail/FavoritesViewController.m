@@ -41,6 +41,10 @@
     [self addMessageForEmptyTable];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.tableView reloadData];
+}
+
 - (void)viewWillDisappear:(BOOL)animated {
     [self saveChecklistItems];
 }

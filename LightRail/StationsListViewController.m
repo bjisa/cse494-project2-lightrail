@@ -34,10 +34,11 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    Stations *stations = [Stations sharedStations];
-    StationDetailsViewController *destination = segue.destinationViewController;
-    destination.selectedStation = stations.stationlist[self.selectedIndexPathRow % stations.stationlist.count];
-
+    if ([segue.identifier isEqualToString:@"viewStationDetails"]) {
+        Stations *stations = [Stations sharedStations];
+        StationDetailsViewController *destination = segue.destinationViewController;
+        destination.selectedStation = stations.stationlist[self.selectedIndexPathRow];
+    }
 }
 
 /*
@@ -68,6 +69,7 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.selectedIndexPathRow = indexPath.row;
+    [self performSegueWithIdentifier:@"viewStationDetails" sender:self];
 }
 
 @end

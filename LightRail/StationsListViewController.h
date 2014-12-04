@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StationModel.h"
 
 @interface StationsListViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
-
+@property(strong,nonatomic) StationModel *stationModel;
 @end
