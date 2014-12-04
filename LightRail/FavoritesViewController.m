@@ -75,6 +75,7 @@
 {
     StationDetailsViewController *destination = segue.destinationViewController;
     destination.selectedStation = self.favoriteStations[self.selectedIndexPathRow];
+    destination.selectedRow = self.selectedIndexPathRow;
 }
 
 #pragma mark - TableViewDelegation

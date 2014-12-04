@@ -20,14 +20,16 @@
 
 @implementation StationsListViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.selectedIndexPathRow = 0;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -37,7 +39,7 @@
     Stations *stations = [Stations sharedStations];
     StationDetailsViewController *destination = segue.destinationViewController;
     destination.selectedStation = stations.stationlist[self.selectedIndexPathRow % stations.stationlist.count];
-
+    destination.selectedRow = self.selectedIndexPathRow;
 }
 
 /*
@@ -67,6 +69,13 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"User selected row %li", (long)indexPath.row);
+    self.selectedIndexPathRow = indexPath.row;
+}
+
+- (void) tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"User deselected row %li", (long)indexPath.row);
     self.selectedIndexPathRow = indexPath.row;
 }
 

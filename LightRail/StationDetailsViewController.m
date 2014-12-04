@@ -57,7 +57,7 @@ int const TrainTimeEqualToCurrentTime = 0;
     
     // Detect if the station is a favorite station
     Boolean inFavorites = [self isStationIDInFavorites:self.selectedStation.stopID];
-    NSLog(@"viewDidLoad inFavorites = %@", (inFavorites ? @"true" : @"false"));
+    //NSLog(@"viewDidLoad inFavorites = %@", (inFavorites ? @"true" : @"false"));
     
     // Update the click button
     [self changeButtonView:inFavorites];
@@ -170,13 +170,15 @@ int const TrainTimeEqualToCurrentTime = 0;
     NSString *path = [[NSBundle mainBundle] pathForResource:@"stops" ofType:@"txt"];
     NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSMutableArray *stopArray = [NSMutableArray arrayWithArray:[content componentsSeparatedByString:@"\n"]];
-    //    if ([[stopArray[0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
-    //        isEqualToString:@"stop_id_west,stop_id_east,stop_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,wheelchair_boarding"])
-    //    {
-    //        [stopArray removeObject:0];
-    //    }
     
-    NSArray *temp = [stopArray[self.selectedStation.stopID.intValue - 10001] componentsSeparatedByString:@","];
+    NSLog(@"self.selectedStation.name   = %@", self.selectedStation.name);
+    NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
+    NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
+    NSLog(@"stopArray[(self.selectedStation.stopID.intValue - 10001)] = %@", stopArray[((self.selectedStation.stopID.intValue - 10001) % stopArray.count)]);
+    
+    NSLog(@"stopArray[self.selectedRow] = %@", stopArray[self.selectedRow % stopArray.count]);
+    
+    NSArray *temp = [stopArray[((self.selectedStation.stopID.intValue - 10001) % stopArray.count) + 1] componentsSeparatedByString:@","];
     if (direction == EastboundDirectionID)
     {
         int value = [temp[0] intValue];
@@ -334,12 +336,12 @@ int const TrainTimeEqualToCurrentTime = 0;
 - (IBAction)addToFavorites:(id)sender
 {
     // Add/Remove the station to/from favorites
-    [self addOrRemoveStationFromFavorites:self.selectedStation.stopID flipDirections:true];
+    [self addOrRemoveStationFromFavorites:self.selectedStation.stopID];
 }
 
 
 // Add or remove a station with a known StopID from favorites
-- (Boolean) addOrRemoveStationFromFavorites:(NSString *)stationStopID flipDirections:(Boolean) flip
+- (Boolean) addOrRemoveStationFromFavorites:(NSString *)stationStopID
 {
     @try
     {
@@ -347,28 +349,22 @@ int const TrainTimeEqualToCurrentTime = 0;
         Boolean inFavorites = [self isStationIDInFavorites:stationStopID];
         if (inFavorites)
         {
-            if (flip)
-            {
-                // Remove the station from the list of favorites
-                [self.favoriteStations removeObject:stationStopID];
-                NSLog(@"%@\n", self.favoriteStations);
-                
-                // Show message that station was saved to favorites
-                [self displayFavoritesPopup:@"Removed From Favorites"];
-            }
+            // Remove the station from the list of favorites
+            [self.favoriteStations removeObject:stationStopID];
+            NSLog(@"%@\n", self.favoriteStations);
+            
+            // Show message that station was saved to favorites
+            [self displayFavoritesPopup:@"Removed From Favorites"];
         }
         // Case 2: Station ID is not currently in the favorites and needs to be added
         else
         {
-            if (flip)
-            {
-                // Add the station to the list of favorites
-                [self.favoriteStations addObject:stationStopID];
-                NSLog(@"%@\n", self.favoriteStations);
-                
-                // Show message that station was saved to favorites
-                [self displayFavoritesPopup:@"Added to Favorites"];
-            }
+            // Add the station to the list of favorites
+            [self.favoriteStations addObject:stationStopID];
+            NSLog(@"%@\n", self.favoriteStations);
+            
+            // Show message that station was saved to favorites
+            [self displayFavoritesPopup:@"Added to Favorites"];
         }
         
         // Change the button text and background color
@@ -404,7 +400,7 @@ int const TrainTimeEqualToCurrentTime = 0;
 // Modify the text of the button to adjust "Add to Favorites" / "Remove From Favorites"
 - (void) changeButtonView:(Boolean)inFavorites
 {
-    NSLog(@"ChangeButtonView inFavorites = %@", (inFavorites ? @"true" : @"false"));
+    //NSLog(@"ChangeButtonView inFavorites = %@", (inFavorites ? @"true" : @"false"));
     
     if (inFavorites)
     {
@@ -418,7 +414,8 @@ int const TrainTimeEqualToCurrentTime = 0;
     }
 }
 
-- (IBAction)boardNext:(id)sender {
+- (IBAction)boardNext:(id)sender
+{
     Stations *stations = [Stations sharedStations];
     
     uint direction = [self getStationIDForDirection:self.eastbound];

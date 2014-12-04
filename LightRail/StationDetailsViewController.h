@@ -26,6 +26,7 @@
 - (IBAction)directionChanged:(id)sender;
 
 @property StationModel *selectedStation;
+@property long selectedRow;
 
 @property (strong, nonatomic) IBOutlet UIButton *addToFavoritesButton;
 
