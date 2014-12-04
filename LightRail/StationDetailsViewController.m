@@ -162,7 +162,6 @@ int const TrainTimeEqualToCurrentTime = 0;
     
 }
 
-
 // Get the station ID from the stop ID for the direction specified
 - (uint) getStationIDForDirection:(uint)direction
 {
@@ -188,7 +187,6 @@ int const TrainTimeEqualToCurrentTime = 0;
         return ([self checkDirection:value]) ? value : [temp[0] intValue];
     }
 }
-
 
 // Check the direction value found earlier to verify that it is not equal to 0
 - (Boolean) checkDirection:(uint)value

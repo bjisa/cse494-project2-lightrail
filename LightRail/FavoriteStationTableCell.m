@@ -10,8 +10,8 @@
 
 @implementation FavoriteStationTableCell
 
-@synthesize stationName = _stationName;
-@synthesize timeRemaining = _timeRemaining;
+@synthesize stationNameLabel = _stationNameLabel;
+@synthesize nextTimeLabel = _nextTimeLabel;
 @synthesize directionSelector = _directionSelector;
 
 - (void)awakeFromNib {
@@ -25,5 +25,11 @@
 }
 
 - (IBAction)changeDirection:(id)sender {
+    if (self.directionSelector.selectedSegmentIndex == 0) {
+        self.nextTimeLabel.text = self.nextEastTime;
+    } else {
+        self.nextTimeLabel.text = self.nextWestTime;
+    }
 }
+
 @end

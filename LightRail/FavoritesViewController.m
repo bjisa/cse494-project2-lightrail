@@ -95,7 +95,7 @@
     }
     //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     StationModel *station = self.favoriteStations[indexPath.row];
-    cell.stationName.text = station.name;
+    cell.stationNameLabel.text = station.name;
     
     // Calculate time remaining until next train arrives.
     //cell.timeRemaining.text = @"15 minutes";
@@ -104,9 +104,11 @@
     Trip *nextWestTrip = [self getNextTrip:[station.stopIDWestbound doubleValue]];
     
     NSString *eastTime = [self formatTimeString:nextEastTrip.departureTime];
+    cell.nextEastTime = eastTime;
     NSString *westTime = [self formatTimeString:nextWestTrip.departureTime];
+    cell.nextWestTime = westTime;
     
-    cell.timeRemaining.text = eastTime;
+    cell.nextTimeLabel.text = eastTime;
 
     return cell;
 }

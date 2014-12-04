@@ -10,9 +10,12 @@
 
 @interface FavoriteStationTableCell : UITableViewCell
 
-@property (nonatomic, weak) IBOutlet UILabel *stationName;
-@property (nonatomic, weak) IBOutlet UILabel *timeRemaining;
+@property NSString *nextEastTime;
+@property NSString *nextWestTime;
+@property (nonatomic, weak) IBOutlet UILabel *stationNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel *nextTimeLabel;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *directionSelector;
+
 - (IBAction)changeDirection:(id)sender;
 
 @end

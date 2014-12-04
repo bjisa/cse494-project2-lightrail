@@ -28,8 +28,8 @@
                             <action selector="changeDirection:" destination="KjU-GV-ohx" eventType="valueChanged" id="rEz-du-nfh"/>
                         </connections>
                     </segmentedControl>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arriving in:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-3d-OSb">
-                        <rect key="frame" x="70" y="71" width="82" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arriving at:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-3d-OSb">
+                        <rect key="frame" x="70" y="71" width="83" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -44,8 +44,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="directionSelector" destination="hcA-Th-Mvw" id="syw-my-sX1"/>
-                <outlet property="stationName" destination="G6t-cf-HdL" id="pto-p5-J78"/>
-                <outlet property="timeRemaining" destination="LuV-Et-QZS" id="rpO-aa-dYC"/>
+                <outlet property="nextTimeLabel" destination="LuV-Et-QZS" id="I9M-rJ-nx3"/>
+                <outlet property="stationNameLabel" destination="G6t-cf-HdL" id="fYd-yl-OuE"/>
             </connections>
             <point key="canvasLocation" x="545" y="235.5"/>
         </tableViewCell>
