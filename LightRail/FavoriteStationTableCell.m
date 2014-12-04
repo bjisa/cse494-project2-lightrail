@@ -10,6 +10,10 @@
 
 @implementation FavoriteStationTableCell
 
+@synthesize stationName = _stationName;
+@synthesize timeRemaining = _timeRemaining;
+@synthesize directionSelector = _directionSelector;
+
 - (void)awakeFromNib {
     // Initialization code
 }

@@ -61,6 +61,8 @@ int const TrainTimeEqualToCurrentTime = 0;
     
     // Update the click button
     [self changeButtonView:inFavorites];
+    
+    NSLog(@"Selected Station id: %@", self.selectedStation.stopID);
 }
 
 - (void)viewWillDisappear:(BOOL)animated

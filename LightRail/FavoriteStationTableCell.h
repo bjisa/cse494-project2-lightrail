@@ -10,4 +10,8 @@
 
 @interface FavoriteStationTableCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *stationName;
+@property (nonatomic, weak) IBOutlet UILabel *timeRemaining;
+@property (nonatomic, weak) IBOutlet UISegmentedControl *directionSelector;
+
 @end
