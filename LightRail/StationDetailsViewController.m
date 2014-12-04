@@ -74,6 +74,8 @@ int const TrainTimeEqualToCurrentTime = 0;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    NSLog(@"StationDetailsViewController: Memory Warning");
 }
 
 
@@ -171,12 +173,13 @@ int const TrainTimeEqualToCurrentTime = 0;
     NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     NSMutableArray *stopArray = [NSMutableArray arrayWithArray:[content componentsSeparatedByString:@"\n"]];
     
-    NSLog(@"self.selectedStation.name   = %@", self.selectedStation.name);
-    NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
-    NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
-    NSLog(@"stopArray[(self.selectedStation.stopID.intValue - 10001)] = %@", stopArray[((self.selectedStation.stopID.intValue - 10001) % stopArray.count)]);
+    //NSLog(@"self.selectedStation.name   = %@", self.selectedStation.name);
+    //NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
+    //NSLog(@"self.selectedStation.stopID = %i", self.selectedStation.stopID.intValue + 1);
+    NSLog(@"stopArray[%i] = %@",self.selectedStation.stopID.intValue - 10001, stopArray[((self.selectedStation.stopID.intValue - 10001) % stopArray.count)]);
     
-    NSLog(@"stopArray[self.selectedRow] = %@", stopArray[self.selectedRow % stopArray.count]);
+    //NSLog(@"You clicked on cell %li", self.selectedRow);
+    //NSLog(@"stopArray[self.selectedRow] = %@", stopArray[self.selectedRow % stopArray.count]);
     
     NSArray *temp = [stopArray[((self.selectedStation.stopID.intValue - 10001) % stopArray.count) + 1] componentsSeparatedByString:@","];
     if (direction == EastboundDirectionID)

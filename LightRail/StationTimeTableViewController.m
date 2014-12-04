@@ -10,7 +10,8 @@
 
 @implementation StationTimeTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -19,17 +20,19 @@
 
 #pragma mark - TableViewDelegation
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
     return self.times.count;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSString *time = self.times[indexPath.row];
     cell.textLabel.text = time;
     
-    cell.imageView.image = [UIImage imageNamed:@"Favorited"];
+    //cell.imageView.image = [UIImage imageNamed:@"Favorited"];
     
     return cell;
 }

@@ -32,6 +32,8 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    NSLog(@"StationsListViewController: Memory Warning");
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

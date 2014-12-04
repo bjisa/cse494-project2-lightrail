@@ -46,6 +46,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+
+    NSLog(@"FavoritesViewController: Memory Warning");
 }
 
 - (void)loadTableViewData {
