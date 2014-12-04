@@ -39,14 +39,6 @@
     [self addTrainPath];
 }
 
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    Stations *stations = [Stations sharedStations];
-    //StationDetailsViewController *destination = segue.destinationViewController;
-    //destination.selectedStation = stations.stationlist[self.selectedIndexPathRow % stations.stationlist.count];
-    
-}
-
 - (void)addTrainPath {
     [self.mapView removeAnnotations:self.mapView.annotations];
     
@@ -116,13 +108,13 @@
     
     //[self.locationManager startUpdatingLocation];
     
-    CLLocationCoordinate2D currentCoordinate = self.locationManager.location.coordinate;
+    //CLLocationCoordinate2D currentCoordinate = self.locationManager.location.coordinate;
     
     // Forming polyline and adding to map
     
     MKPolyline *trainRoute = [MKPolyline polylineWithPoints:mappoints count:numOfEastboundStops];
     self.trainRoute = trainRoute;
-    [self.mapView addOverlay:trainRoute];
+    //[self.mapView addOverlay:trainRoute];
     
     //MKPolyline *westboundTrainRoute = [MKPolyline polylineWithPoints:westboundMappoints count:(stations.stationlist.count - numOfEastboundStops + 2)];
     //[self.mapView addOverlay:westboundTrainRoute];
@@ -130,7 +122,7 @@
     //NSArray *overlays = [NSArray arrayWithObjects:trainRoute, westboundTrainRoute, nil];
     //[self.mapView addOverlays:overlays];
     
-    [self zoomToPolyline:self.mapView polyLine:trainRoute animated:YES];
+    //[self zoomToPolyline:self.mapView polyLine:trainRoute animated:YES];
     
     for (int i = 0; i < trainRoute.pointCount; i++) {
         NSLog(@"i: %d, point x: %f, y: %f", i, trainRoute.points[0].x, trainRoute.points[0].y);
