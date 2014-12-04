@@ -7,6 +7,7 @@
 //
 
 #import "FavoritesViewController.h"
+#import "FavoriteStationTableCell.h"
 #import "Stations.h"
 #import "StationDetailsViewController.h"
 
@@ -84,12 +85,26 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    static NSString *favoritesTableIdentifier = @"FavoriteStationTableCell";
+    
+    FavoriteStationTableCell *cell = (FavoriteStationTableCell *)[tableView dequeueReusableCellWithIdentifier:favoritesTableIdentifier];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"FavoriteStationTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     StationModel *station = self.favoriteStations[indexPath.row];
-    //NSString *stopID = self.favoriteStationIDs[indexPath.row];
-    cell.textLabel.text = station.name;
+    cell.stationName.text = station.name;
+    
+    // Calculate time remaining until next train arrives.
+    cell.timeRemaining.text = @"15 minutes";
 
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 105;
 }
 
 - (void)addMessageForEmptyTable
