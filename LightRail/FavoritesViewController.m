@@ -11,6 +11,7 @@
 #import "StationDetailsViewController.h"
 
 @interface FavoritesViewController ()
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray *favoriteStations;
 @property NSMutableArray *favoriteStationIDs;
@@ -57,7 +58,9 @@
         StationModel *model = [Stations getStation:stopID];
         [self.favoriteStations addObject:model];
     }
-    NSLog(@"Favorite Stations in LoadTableViewData: %@", self.favoriteStations);
+    for (StationModel *station in self.favoriteStations) {
+        NSLog(@"Favorite Stations in LoadTableViewData: %@, id: %@\n", station.name, station.stopID);
+    }
 }
 
 - (void)deleteSavedStation:(NSInteger)index {

@@ -22,6 +22,8 @@
 		95EA42A81A1D43C100C8CECB /* stops.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EA42A71A1D43C100C8CECB /* stops.txt */; };
 		E1A72B4C1A2BA9CC00370FBD /* StationTimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A72B4B1A2BA9CC00370FBD /* StationTimeTableViewController.m */; };
 		E1A72B521A2EE20B00370FBD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A72B511A2EE20B00370FBD /* MBProgressHUD.m */; };
+		E1A72B541A2FFB3400370FBD /* FavoriteStationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1A72B531A2FFB3400370FBD /* FavoriteStationTableCell.xib */; };
+		E1A72B571A2FFDFE00370FBD /* FavoriteStationTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A72B561A2FFDFE00370FBD /* FavoriteStationTableCell.m */; };
 		E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */; };
 		E1C4EC801A1D40EF00000EE7 /* StationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C4EC7F1A1D40EF00000EE7 /* StationModel.m */; };
 		E588CAC11A227D2B00186E93 /* StationTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = E588CAC01A227D2B00186E93 /* StationTimes.m */; };
@@ -73,6 +75,9 @@
 		E1A72B4B1A2BA9CC00370FBD /* StationTimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTimeTableViewController.m; sourceTree = "<group>"; };
 		E1A72B501A2EE20B00370FBD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E1A72B511A2EE20B00370FBD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E1A72B531A2FFB3400370FBD /* FavoriteStationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoriteStationTableCell.xib; sourceTree = "<group>"; };
+		E1A72B551A2FFDFE00370FBD /* FavoriteStationTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteStationTableCell.h; sourceTree = "<group>"; };
+		E1A72B561A2FFDFE00370FBD /* FavoriteStationTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteStationTableCell.m; sourceTree = "<group>"; };
 		E1C4EC7B1A1D3D7600000EE7 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
 		E1C4EC7C1A1D3D7600000EE7 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
 		E1C4EC7E1A1D40EF00000EE7 /* StationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationModel.h; sourceTree = "<group>"; };
@@ -163,6 +168,9 @@
 				E58E1D4C1A2EA54900100694 /* Trip Analysis Models */,
 				E1A72B501A2EE20B00370FBD /* MBProgressHUD.h */,
 				E1A72B511A2EE20B00370FBD /* MBProgressHUD.m */,
+				E1A72B531A2FFB3400370FBD /* FavoriteStationTableCell.xib */,
+				E1A72B551A2FFDFE00370FBD /* FavoriteStationTableCell.h */,
+				E1A72B561A2FFDFE00370FBD /* FavoriteStationTableCell.m */,
 			);
 			path = LightRail;
 			sourceTree = "<group>";
@@ -433,6 +441,7 @@
 				959421DD1A1D36C200715E6D /* LaunchScreen.xib in Resources */,
 				959421DA1A1D36C200715E6D /* Images.xcassets in Resources */,
 				E58E1D531A2EA76F00100694 /* trips.txt in Resources */,
+				E1A72B541A2FFB3400370FBD /* FavoriteStationTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +475,7 @@
 				E58E1D501A2EA56D00100694 /* TripAnalyzer.m in Sources */,
 				E1C4EC7D1A1D3D7600000EE7 /* CHCSVParser.m in Sources */,
 				959421CC1A1D36C100715E6D /* main.m in Sources */,
+				E1A72B571A2FFDFE00370FBD /* FavoriteStationTableCell.m in Sources */,
 				E58E1D3D1A2EA0DB00100694 /* Constants.m in Sources */,
 				E1A72B521A2EE20B00370FBD /* MBProgressHUD.m in Sources */,
 			);
