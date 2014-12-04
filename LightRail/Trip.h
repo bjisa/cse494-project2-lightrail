@@ -11,8 +11,11 @@
 
 @interface Trip : NSObject
 
-@property (nonatomic, strong) NSMutableArray *tripDetailsArray;
+@property NSString *tripID;
+@property NSString *departureTime;
+@property NSString *stopID;
+@property NSString *stopSequence;
 
-- (id) initWithTripID:(long)tripID;
+-(id) initWithCSVDictionary:(NSDictionary *)dict;
 
 @end

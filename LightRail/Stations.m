@@ -46,6 +46,8 @@ static Stations *theStations = nil;
                 NSMutableDictionary *stationdict = [NSMutableDictionary new];
                 
                 [stationdict setObject:station[2] forKey:@"stop_id"];
+                [stationdict setObject:station[0] forKey:@"stop_id_east"];
+                [stationdict setObject:station[1] forKey:@"stop_id_west"];
                 [stationdict setObject:station[3] forKey:@"name"];
                 [stationdict setObject:station[5] forKey:@"latitude"];
                 [stationdict setObject:station[6] forKey:@"longitude"];
@@ -62,6 +64,16 @@ static Stations *theStations = nil;
     Stations *stations = [Stations sharedStations];
     for (StationModel *station in stations.stationlist) {
         if ([station.stopID isEqualToString:stop_id]){
+            return station;
+        }
+    }
+    return nil;
+}
+
++ (StationModel *)getStationByStopID:(NSString *)stop_id {
+    Stations *stations = [Stations sharedStations];
+    for (StationModel *station in stations.stationlist) {
+        if ([station.stopIDEastbound isEqualToString:stop_id] || [station.stopIDWestbound isEqualToString:stop_id]){
             return station;
         }
     }

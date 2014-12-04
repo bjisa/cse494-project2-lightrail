@@ -10,34 +10,14 @@
 
 @implementation Trip
 
-- (id) initWithTripID:(long)tripID
+-(id) initWithCSVDictionary:(NSDictionary *)dict
 {
-    self = [super init];
-    
-    if (self)
+    if (self = [super init])
     {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"stop_times" ofType:@"txt"];
-        NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-        NSArray *stopTimeDetails = [NSArray arrayWithArray:[content componentsSeparatedByString:@"\n"]];
-        
-        // DEBUG STATEMENTS
-        //NSLog(@"Path: %@", path);
-        //NSLog(@"Content:\n%@", content);
-        //NSLog(@"stopTimeDetails.count = %lu", (unsigned long)stopTimeDetails.count);
-        
-        // Copy the stations with the desired ID into the mutable array
-        self.tripDetailsArray = [[NSMutableArray alloc] init];
-        for (int i = 1; i < stopTimeDetails.count; i++)
-        {
-            // Add the station if it has the same trip ID as the trip ID requested by the user
-            StationStopDetails *details = [[StationStopDetails alloc] initWithString:stopTimeDetails[i]];
-            
-            if (details.trip_id == tripID)
-            {
-                //NSLog(@"Adding station with tripID %li", details.trip_id);
-                [self.tripDetailsArray addObject:details];
-            }
-        }
+        self.tripID = dict[@"trip_id"];
+        self.departureTime = dict[@"departure_time"];
+        self.stopID = dict[@"stop_id"];
+        self.stopSequence = dict[@"stop_sequence"];
     }
     return self;
 }

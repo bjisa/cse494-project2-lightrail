@@ -418,7 +418,10 @@ int const TrainTimeEqualToCurrentTime = 0;
 
 - (IBAction)boardNext:(id)sender {
     Stations *stations = [Stations sharedStations];
-    stations.currentStation = self.selectedStation.stopID;
+    
+    uint direction = [self getStationIDForDirection:self.eastbound];
+    
+    stations.currentStation = [NSString stringWithFormat:@"%d",direction];
     stations.currentTime = self.nextTime;
 }
 

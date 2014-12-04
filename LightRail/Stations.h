@@ -16,5 +16,6 @@
 
 + (Stations*) sharedStations;
 + (StationModel *) getStation:(NSString *)stop_id;
++ (StationModel *) getStationByStopID:(NSString *)stop_id;
 
 @end
