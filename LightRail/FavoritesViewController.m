@@ -133,6 +133,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedIndexPathRow = indexPath.row;
+    [self performSegueWithIdentifier:@"viewDetails" sender:self];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
