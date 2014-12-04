@@ -375,47 +375,11 @@
             </objects>
             <point key="canvasLocation" x="415" y="-511"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="WDx-DZ-u9n">
-            <objects>
-                <viewController id="3CW-Df-Jit" customClass="SecondViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="huC-T0-Vud">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="r8U-uU-CBR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="475"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="3CW-Df-Jit" id="Cxh-Hw-jOz"/>
-                                </connections>
-                            </mapView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now loading..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zGA-DB-awy">
-                                <rect key="frame" x="0.0" y="474" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="second" id="uNT-xH-vBd"/>
-                    <connections>
-                        <outlet property="arrivingAtLabel" destination="zGA-DB-awy" id="z7D-8e-5AM"/>
-                        <outlet property="mapView" destination="r8U-uU-CBR" id="jWf-3w-r0m"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mR8-Ve-QMX" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="415" y="107"/>
-        </scene>
     </scenes>
     <resources>
         <image name="favorite" width="25" height="25"/>
         <image name="map" width="25" height="25"/>
         <image name="rail" width="20" height="30"/>
-        <image name="second" width="30" height="30"/>
         <image name="status" width="25" height="25"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

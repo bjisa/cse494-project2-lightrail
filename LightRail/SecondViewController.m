@@ -131,6 +131,10 @@
     //[self.mapView addOverlays:overlays];
     
     [self zoomToPolyline:self.mapView polyLine:trainRoute animated:YES];
+    
+    for (int i = 0; i < trainRoute.pointCount; i++) {
+        NSLog(@"i: %d, point x: %f, y: %f", i, trainRoute.points[0].x, trainRoute.points[0].y);
+    }
 }
 
 

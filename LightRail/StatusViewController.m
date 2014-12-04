@@ -38,9 +38,7 @@
     
     Stations *stations = [Stations sharedStations];
     
-    long stopID = [stations.currentStation doubleValue];
-    NSString *nextTime = [NSString stringWithFormat:@"%@", stations.currentTime];
-    
+    long stopID = [stations.currentStation doubleValue];    
     
     // ====================================
     // Make array of next stops for a trip

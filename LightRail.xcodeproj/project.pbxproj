@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		954238E01A2FAF9600E920B4 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 954238DF1A2FAF9600E920B4 /* Trip.m */; };
 		954238E51A2FB50500E920B4 /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954238E41A2FB50500E920B4 /* StatusViewController.m */; };
+		957712F71A300355006DA006 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957712F61A300355006DA006 /* MapKit.framework */; };
 		959421CC1A1D36C100715E6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CB1A1D36C100715E6D /* main.m */; };
 		959421CF1A1D36C100715E6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421CE1A1D36C100715E6D /* AppDelegate.m */; };
 		959421D21A1D36C100715E6D /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959421D11A1D36C100715E6D /* FavoritesViewController.m */; };
@@ -51,6 +52,7 @@
 		954238DF1A2FAF9600E920B4 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
 		954238E31A2FB50500E920B4 /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
 		954238E41A2FB50500E920B4 /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
+		957712F61A300355006DA006 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		959421C61A1D36C100715E6D /* LightRail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightRail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959421CA1A1D36C100715E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		959421CB1A1D36C100715E6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957712F71A300355006DA006 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +140,7 @@
 		959421BD1A1D36C100715E6D = {
 			isa = PBXGroup;
 			children = (
+				957712F61A300355006DA006 /* MapKit.framework */,
 				959421C81A1D36C100715E6D /* LightRail */,
 				959421E51A1D36C200715E6D /* LightRailTests */,
 				959421C71A1D36C100715E6D /* Products */,
@@ -404,6 +408,11 @@
 				TargetAttributes = {
 					959421C51A1D36C100715E6D = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					959421E11A1D36C200715E6D = {
 						CreatedOnToolsVersion = 6.1;
