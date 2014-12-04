@@ -13,5 +13,6 @@
 @property (nonatomic, weak) IBOutlet UILabel *stationName;
 @property (nonatomic, weak) IBOutlet UILabel *timeRemaining;
 @property (nonatomic, weak) IBOutlet UISegmentedControl *directionSelector;
+- (IBAction)changeDirection:(id)sender;
 
 @end

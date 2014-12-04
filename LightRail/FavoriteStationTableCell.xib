@@ -24,6 +24,9 @@
                             <segment title="Eastbound"/>
                             <segment title="Westbound"/>
                         </segments>
+                        <connections>
+                            <action selector="changeDirection:" destination="KjU-GV-ohx" eventType="valueChanged" id="rEz-du-nfh"/>
+                        </connections>
                     </segmentedControl>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arriving in:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX9-3d-OSb">
                         <rect key="frame" x="70" y="71" width="82" height="21"/>

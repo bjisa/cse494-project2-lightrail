@@ -427,8 +427,6 @@ int const TrainTimeEqualToCurrentTime = 0;
     stations.currentTime = self.nextTime;
     
     [self displayFavoritesPopup:@"Train set."];
-    
-    
 }
 
 #pragma mark - NSCoding

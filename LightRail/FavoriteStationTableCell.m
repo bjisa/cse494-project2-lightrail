@@ -24,4 +24,6 @@
     // Configure the view for the selected state
 }
 
+- (IBAction)changeDirection:(id)sender {
+}
 @end
