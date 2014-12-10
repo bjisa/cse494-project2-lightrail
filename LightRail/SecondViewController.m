@@ -124,9 +124,13 @@
     
     //[self zoomToPolyline:self.mapView polyLine:trainRoute animated:YES];
     
-    for (int i = 0; i < trainRoute.pointCount; i++) {
+    /*for (int i = 0; i < trainRoute.pointCount; i++) {
         NSLog(@"i: %d, point x: %f, y: %f", i, trainRoute.points[0].x, trainRoute.points[0].y);
-    }
+    }*/
+    
+    // Just zoom to the 12th station for now since we don't have the polyline :/
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(pathcoordinates[12], 30000.0, 30000.0);
+    [self.mapView setRegion:region animated:YES];
 }
 
 
