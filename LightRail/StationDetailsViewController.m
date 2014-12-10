@@ -142,24 +142,39 @@ int const TrainTimeEqualToCurrentTime = 0;
     
     self.nextTime = arrivalTimes[i % arrivalTimes.count];
     
-    // Format and print the next 4 times into the data labels
-    self.time1Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time2Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time3Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time4Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time5Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time6Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time7Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
-    i++;
-    self.time8Label.text = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    // Format and print the next 4 times into the data labels, ignoring seconds
+    NSString *str = @"";
     
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time1Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
     
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time2Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time3Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+    
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time4Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+    
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time5Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+    
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time6Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+    
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time7Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
+    
+    i++;
+    str = [self formatTimeString:arrivalTimes[i % arrivalTimes.count]];
+    self.time8Label.text = [[str substringToIndex:[str rangeOfString:@":" options:NSBackwardsSearch].location] stringByAppendingString:[str substringFromIndex:[str rangeOfString:@" "].location]];
 }
 
 // Get the station ID from the stop ID for the direction specified
